@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>股東會紀念品戰情室</title>
+    <title>股東會紀念品</title>
     <!-- 使用 Tailwind CSS 加速開發 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -29,10 +29,12 @@
             position: sticky; top: 0; z-index: 20; background-color: #f1f5f9;
             box-shadow: 0 2px 4px -1px rgba(0,0,0,0.1);
         }
-        .sortable { cursor: pointer; user-select: none; }
+        .sortable { cursor: pointer; user-select: none; position: relative; padding-right: 20px; }
         .sortable:hover { background-color: #e2e8f0; }
-        .sort-icon { font-size: 0.75rem; color: #94a3b8; margin-left: 4px; }
-        .sort-active { color: #4f46e5; font-weight: bold; }
+        /* 預設顯示灰色的雙箭頭 */
+        .sort-icon { position: absolute; right: 4px; color: #cbd5e1; font-size: 0.7rem; top: 50%; transform: translateY(-50%); }
+        /* 啟動時顯示藍色單箭頭並加粗 */
+        .sort-active { color: #4f46e5 !important; font-weight: 900; }
     </style>
 </head>
 <body class="bg-slate-50 min-h-screen text-slate-800">
@@ -220,8 +222,12 @@
     function renderData() {
         const q = document.getElementById('searchInput').value.toLowerCase();
         
-        // 更新排序 Icon 顯示
-        document.querySelectorAll('.sort-icon').forEach(el => { el.innerHTML = ''; el.classList.remove('sort-active'); });
+        // 更新排序 Icon 顯示 (預設為灰色↕，啟動為藍色▲▼)
+        document.querySelectorAll('.sort-icon').forEach(el => { 
+            el.innerHTML = '↕'; 
+            el.classList.remove('sort-active'); 
+        });
+        
         let s = sortState[currentTab];
         let suffix = currentTab === 'history' ? '-hist' : '';
         let iconEl = document.getElementById(`sort-${s.key}${suffix}`);
@@ -242,7 +248,7 @@
                 if (item.sg_item && item.sg_item !== '無' && (!item.mops_item || item.mops_item === '無')) tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5">零</span>`;
                 else if (item.mops_item && item.mops_item !== '無' && (!item.sg_item || item.sg_item === '無')) tag = `<span class="text-red-600 font-bold text-[10px] align-top ml-0.5">公</span>`;
 
-                // 買進日過期與空值邏輯 (擷取日期字串比對)
+                // 買進日過期與空值邏輯 (擷取日期字串比對，忽略星期)
                 let buyClass = "";
                 if (!item.last_buy) {
                     buyClass = "bg-danger";
@@ -268,7 +274,7 @@
                     <td class="px-3 py-2 font-mono text-slate-700">${item.stock_id}${tag}</td>
                     <td class="px-3 py-2 font-bold text-slate-900 whitespace-nowrap">${item.stock_name}</td>
                     <td class="px-3 py-2 text-slate-600">${item.price || '-'}</td>
-                    <td class="px-3 py-2 ${buyClass}">${item.last_buy || ''}</td>
+                    <td class="px-3 py-2 ${buyClass} whitespace-nowrap">${item.last_buy || ''}</td>
                     <td class="px-3 py-2 ${souvenirBg} font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='${tipContent}'>
                         ${displayItem}
                     </td>
