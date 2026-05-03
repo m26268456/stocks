@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股東會紀念品追蹤系統</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tooltip { position: relative; cursor: help; }
+        .tooltip .tooltiptext {
+            visibility: hidden; width: 240px; background-color: #1e293b; color: #fff;
+            text-align: left; border-radius: 8px; padding: 12px; position: absolute;
+            z-index: 100; bottom: 125%; left: 50%; transform: translateX(-50%); opacity: 0;
+            transition: opacity 0.3s; pointer-events: none; white-space: pre-line; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); border: 1px solid #334155; line-height: 1.5;
+        }
+        .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+        .bg-strict { background-color: #fee2e2 !important; } /* 紅底 */
+        .bg-gift { background-color: #f0fdf4 !important; }   /* 綠底 */
+        .bg-missing { background-color: #fef9c3 !important; } /* 黃底 */
+        .expired { color: #dc2626; font-weight: bold; }      /* 過期紅字粗體 */
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800">
+
+<nav class="bg-indigo-700 text-white shadow-lg sticky top-0 z-40">
+    <div class="max-w-[95%] mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center space-x-8">
+                <span class="text-xl font-bold tracking-wider">紀念品追蹤</span>
+                <div class="flex space-x-2">
+                    <button onclick="switchPage('current')" id="btn-current" class="px-4 py-2 rounded-md text-sm font-medium bg-indigo-900 shadow-inner">當下會議</button>
+                    <button onclick="switchPage('history')" id="btn-history" class="px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-600 transition">歷史資料</button>
+                </div>
+            </div>
+            <div class="flex-1 max-w-sm ml-4">
+                <input type="text" id="searchInput" oninput="handleSearch()" placeholder="🔍 輸入代號或名稱搜尋..." class="w-full px-4 py-2 bg-indigo-800 border-none text-white placeholder-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-white text-sm">
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="max-w-[95%] mx-auto py-8">
+    <div id="page-current" class="block">
+        <div class="flex justify-between items-end mb-4">
+            <h2 class="text-2xl font-bold text-slate-800">當下會議公告</h2>
+        </div>
+        <div class="overflow-x-auto bg-white rounded-xl shadow-md border border-slate-200">
+            <table class="min-w-full divide-y divide-slate-200">
+                <thead class="bg-slate-100">
+                    <tr>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">代號</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">名稱</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">股價</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider whitespace-nowrap">最後買進日</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider w-1/5">紀念品</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">發放率</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">蓋牌率</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">翻盤率</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider whitespace-nowrap">更新日期</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider w-1/6">條件</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider whitespace-nowrap">性質</th>
+                    </tr>
+                </thead>
+                <tbody id="currentTableBody" class="divide-y divide-slate-100 text-sm"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="page-history" class="hidden">
+        <div class="flex justify-between items-end mb-4">
+            <h2 class="text-2xl font-bold text-slate-800">歷史資料庫</h2>
+        </div>
+        <div class="overflow-x-auto bg-white rounded-xl shadow-md border border-slate-200">
+            <table class="min-w-full divide-y divide-slate-200">
+                <thead class="bg-slate-100">
+                    <tr>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">代號</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">名稱</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">近五年發放率</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">近五年蓋牌率</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">近五年翻盤率</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider w-1/4">條件</th>
+                        <th class="px-4 py-3 text-left text-xs font-bold text-slate-600 uppercase tracking-wider">上次紀念品</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTableBody" class="divide-y divide-slate-100 text-sm"></tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<script>
+    let dbHistory = [];
+    let dbPage1 = [];
+    let currentPage = 'current';
+
+    async function init() {
+        try {
+            const [resH, resP1] = await Promise.all([
+                fetch('data/db_history.json').then(r => r.json()),
+                fetch('data/db_page1.json').then(r => r.json())
+            ]);
+            dbHistory = resH;
+            dbPage1 = resP1;
+            renderPage();
+        } catch (e) { console.error("資料載入失敗:", e); }
+    }
+
+    function switchPage(page) {
+        currentPage = page;
+        document.getElementById('page-current').className = page === 'current' ? 'block' : 'hidden';
+        document.getElementById('page-history').className = page === 'history' ? 'block' : 'hidden';
+        document.getElementById('btn-current').className = `px-4 py-2 rounded-md text-sm font-medium ${page === 'current' ? 'bg-indigo-900 shadow-inner' : 'hover:bg-indigo-600 transition'}`;
+        document.getElementById('btn-history').className = `px-4 py-2 rounded-md text-sm font-medium ${page === 'history' ? 'bg-indigo-900 shadow-inner' : 'hover:bg-indigo-600 transition'}`;
+        renderPage();
+    }
+
+    function handleSearch() { renderPage(); }
+
+    function getStats(stockId, yearsCount) {
+        const h = dbHistory.find(x => x.stock_id === stockId);
+        if (!h) return { ir: '0%', hr: '0%', fr: '0%', logs: [] };
+        const baseYear = new Date().getFullYear();
+        const years = Array.from({length: yearsCount}, (_, i) => baseYear - i);
+        let issues = 0, hides = 0, flips = 0, logs = [];
+
+        years.forEach(y => {
+            const s = h.history[y]?.status || "";
+            const item = h.history[y]?.item || "未公告";
+            if (s.includes("發放")) issues++;
+            if (s.includes("待公布 -> 發放")) hides++;
+            if (s.includes("不發放 -> 發放")) flips++;
+            
+            // 十年模式下，2016特殊標註
+            if (yearsCount === 10 && y === 2016 && !h.history[y]) {
+                logs.push(`<span style="color:#ef4444;font-weight:bold">(2016) 無資料</span>`);
+            } else {
+                logs.push(`(${y}) ${item}`);
+            }
+        });
+        return { ir: Math.round(issues/yearsCount*100)+'%', hr: Math.round(hides/yearsCount*100)+'%', fr: Math.round(flips/yearsCount*100)+'%', logs };
+    }
+
+    function renderPage() {
+        const q = document.getElementById('searchInput').value.toLowerCase();
+        
+        if (currentPage === 'current') {
+            const data = dbPage1.filter(i => i.stock_id.includes(q) || i.stock_name.includes(q))
+                                .sort((a, b) => new Date(b.update_date || 0) - new Date(a.update_date || 0));
+                                
+            document.getElementById('currentTableBody').innerHTML = data.map(item => {
+                const s = getStats(item.stock_id, 5);
+                const isStrict = /身分|身份|證件|正本|不開放|委託/.test(item.condition);
+                const isGift = /7-11|統一|全家|超商|商品卡|商品券|禮物卡|禮券|即享/.test(item.sg_item) && !/咖啡|美式/.test(item.sg_item);
+                
+                const today = new Date().toISOString().split('T')[0].replace(/-/g, '/');
+                const isExpired = item.last_buy && item.last_buy < today;
+                
+                let sourceLabel = "";
+                if (item.sg_item && !item.mops_item) sourceLabel = '<span class="text-emerald-500 font-bold text-[10px] ml-1">零</span>';
+                else if (!item.sg_item && item.mops_item) sourceLabel = '<span class="text-rose-500 font-bold text-[10px] ml-1">公</span>';
+
+                // --- Debug 提醒邏輯 ---
+                let rowClass = item.needs_debug ? "bg-red-50 hover:bg-red-100" : "hover:bg-slate-50";
+                let alertIcon = item.needs_debug ? `<span class="text-rose-600 text-xs ml-1 font-bold" title="多次查詢失敗">⚠️需確認</span>` : '';
+                let displaySouvenir = item.sg_item === item.mops_item ? item.sg_item : `[${item.sg_item}] / [${item.mops_item || '未公告'}]`;
+                
+                if (item.needs_debug) {
+                    displaySouvenir = `<span class="text-rose-600 font-bold underline decoration-rose-400 underline-offset-2">請至MOPS確認或手動Debug</span>`;
+                }
+                
+                let souvenirBg = isStrict ? 'bg-strict' : (isGift ? 'bg-gift' : '');
+
+                return `<tr class="${rowClass} transition">
+                    <td class="px-4 py-3 font-mono text-slate-700">${item.stock_id}${sourceLabel}${alertIcon}</td>
+                    <td class="px-4 py-3 font-bold text-slate-800 whitespace-nowrap">${item.stock_name}</td>
+                    <td class="px-4 py-3 text-slate-600">${item.price || '-'}</td>
+                    <td class="px-4 py-3 ${!item.last_buy ? 'bg-red-100' : ''} ${isExpired ? 'expired' : 'text-slate-600'}">${item.last_buy || ''}</td>
+                    <td class="px-4 py-3 ${souvenirBg} tooltip font-medium text-slate-800">
+                        ${displaySouvenir}
+                        <div class="tooltiptext"><span class="text-emerald-400 font-bold tracking-wide">(${item.stock_id}) ${item.stock_name}</span>\n${s.logs.join('\n')}</div>
+                    </td>
+                    <td class="px-4 py-3 text-slate-600">${s.ir}</td>
+                    <td class="px-4 py-3 text-slate-600">${s.hr}</td>
+                    <td class="px-4 py-3 text-slate-600">${s.fr}</td>
+                    <td class="px-4 py-3 text-slate-400 text-xs whitespace-nowrap">${item.update_date}</td>
+                    <td class="px-4 py-3 text-xs text-slate-500 truncate max-w-[200px]" title="${item.condition}">${item.condition}</td>
+                    <td class="px-4 py-3 font-semibold text-slate-600">${item.meeting_type}</td>
+                </tr>`;
+            }).join('');
+        } else {
+            const data = dbHistory.filter(i => i.stock_id.includes(q) || i.stock_name.includes(q))
+                                  .sort((a, b) => a.stock_id.localeCompare(b.stock_id));
+            document.getElementById('historyTableBody').innerHTML = data.map(item => {
+                const s10 = getStats(item.stock_id, 10);
+                const s5 = getStats(item.stock_id, 5);
+                const isStrict = /身分|身份|證件|正本|不開放|委託/.test(item.condition);
+                const lastYearItem = item.history[new Date().getFullYear() - 1]?.item || '-';
+                
+                return `<tr class="hover:bg-slate-50 transition">
+                    <td class="px-4 py-3 font-mono text-slate-700">${item.stock_id}</td>
+                    <td class="px-4 py-3 font-bold text-slate-800 whitespace-nowrap">${item.stock_name}</td>
+                    <td class="px-4 py-3 text-slate-600">${s5.ir}</td>
+                    <td class="px-4 py-3 text-slate-600">${s5.hr}</td>
+                    <td class="px-4 py-3 text-slate-600">${s5.fr}</td>
+                    <td class="px-4 py-3 text-xs ${isStrict ? 'bg-strict' : (!item.condition ? 'bg-missing' : 'text-slate-500')}">${item.condition || ''}</td>
+                    <td class="px-4 py-3 tooltip font-medium text-slate-800">
+                        ${lastYearItem}
+                        <div class="tooltiptext"><span class="text-emerald-400 font-bold tracking-wide">(${item.stock_id}) ${item.stock_name}</span>\n${s10.logs.join('\n')}</div>
+                    </td>
+                </tr>`;
+            }).join('');
+        }
+    }
+
+    init();
+</script>
+</body>
+</html>
