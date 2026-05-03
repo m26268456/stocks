@@ -16,7 +16,6 @@
         }
         .bg-strict { background-color: #fca5a5 !important; }
         .bg-gift { background-color: #bbf7d0 !important; }
-        .bg-missing { background-color: #fef08a !important; }
         .bg-danger { background-color: #fee2e2 !important; }
         .text-expired { color: #dc2626 !important; font-weight: 800; }
         
@@ -27,7 +26,6 @@
         .sortable { cursor: pointer; user-select: none; transition: background-color 0.2s; }
         .sortable:hover { background-color: #e2e8f0; }
 
-        /* 雙三角形圖標樣式 */
         .sort-container {
             display: inline-flex;
             flex-direction: column;
@@ -40,16 +38,15 @@
             width: 0; height: 0;
             border-left: 4px solid transparent;
             border-right: 4px solid transparent;
-            border-bottom: 5px solid #cbd5e1; /* 預設灰色 */
+            border-bottom: 5px solid #cbd5e1;
             margin-bottom: 2px;
         }
         .tri-down {
             width: 0; height: 0;
             border-left: 4px solid transparent;
             border-right: 4px solid transparent;
-            border-top: 5px solid #cbd5e1; /* 預設灰色 */
+            border-top: 5px solid #cbd5e1;
         }
-        /* 選用條件：上三角形變藍色 (#3b82f6) */
         .active-sort .tri-up { border-bottom-color: #3b82f6; }
     </style>
 </head>
@@ -73,30 +70,29 @@
 </nav>
 
 <main class="max-w-[98%] mx-auto py-6">
-    <!-- 當下會議 Page -->
     <div id="page-current" class="block">
         <div class="overflow-x-auto bg-white rounded-lg shadow border border-slate-200 max-h-[80vh]">
             <table class="min-w-full divide-y divide-slate-200 text-sm">
                 <thead class="bg-slate-100 text-slate-700 font-bold">
                     <tr>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')" title="零: 內容與公文衝突 / 預: 公文未出，引用預測">
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')" title="[標籤說明] 綠色零: 零股寶與公文內容衝突 / 紅色公: 僅有公文資料">
                             代號 <div class="sort-container" id="icon-stock_id"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap">名稱</th>
                         <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('price')">
                             股價 <div class="sort-container" id="icon-price"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('last_buy')" title="紅底: 缺日期 / 紅字: 已過期">
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('last_buy')" title="[顏色說明] 淺紅底: 缺買進日資料 / 紅字粗體: 已過最後買進日">
                             最後買進日 <div class="sort-container" id="icon-last_buy"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left w-1/5" title="紅底: 條件嚴格 / 綠底: 超商禮券">紀念品</th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('ir')" title="<=40%: 粉紅底深紅字 / <=50%: 深紅字">
+                        <th class="sticky-header px-3 py-3 text-left w-1/5" title="[底色說明] 紅底: 領取條件嚴格 / 綠底: 超商禮券或商品卡">紀念品</th>
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('ir')" title="[顏色說明] 淺紅底: 發放率 <= 40% / 深紅字: 發放率 <= 50%">
                             發放率 <div class="sort-container" id="icon-ir"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('hr')" title=">=50%: 深紅字 / 100%: 粉紅底深紅字">
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('hr')" title="[顏色說明] 淺紅底: 蓋牌率 = 100% / 深紅字: 蓋牌率 >= 50%">
                             蓋牌率 <div class="sort-container" id="icon-hr"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')" title="綠字: 曾有翻盤紀錄">
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')" title="[顏色說明] 綠字粗體: 過去五年曾有翻盤紀錄">
                             翻盤率 <div class="sort-container" id="icon-fr"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('update_date')">
@@ -113,7 +109,6 @@
         </div>
     </div>
 
-    <!-- 歷史資料 Page -->
     <div id="page-history" class="hidden">
         <div class="overflow-x-auto bg-white rounded-lg shadow border border-slate-200 max-h-[80vh]">
             <table class="min-w-full divide-y divide-slate-200 text-sm">
@@ -192,16 +187,12 @@
         };
     }
 
-    // 更新機率上色邏輯
     function colorRate(raw, str, type) {
         if (type === 'flip') return raw > 0 ? `<span class="text-green-600 font-bold">${str}</span>` : str;
-        
-        // 發放率：<=40% 粉紅底深紅字，<=50% 深紅字
         if (type === 'issue') {
             if (raw <= 0.4) return `<span class="bg-[#fee2e2] text-red-700 font-bold px-1 rounded">${str}</span>`;
             if (raw <= 0.5) return `<span class="text-red-700 font-bold">${str}</span>`;
         }
-        // 蓋牌率：>=50% 深紅字，100% 粉紅底深紅字
         if (type === 'hide') {
             if (raw === 1.0) return `<span class="bg-[#fee2e2] text-red-700 font-bold px-1 rounded">${str}</span>`;
             if (raw >= 0.5) return `<span class="text-red-700 font-bold">${str}</span>`;
@@ -238,8 +229,6 @@
 
     function renderData() {
         const q = document.getElementById('searchInput').value.toLowerCase();
-        
-        // 更新排序圖標：選中的欄位上三角形變藍色
         document.querySelectorAll('.sort-container').forEach(el => el.classList.remove('active-sort'));
         let s = sortState[currentTab];
         let suffix = currentTab === 'history' ? '-hist' : '';
@@ -251,13 +240,16 @@
             data = sortData(data);
             document.getElementById('body-current').innerHTML = data.map(item => {
                 const condText = item.condition || '';
+                
+                // --- 標籤邏輯修復 ---
                 let tag = "";
-                if (item.mops_item && item.mops_item !== "" && item.mops_item !== "無") {
-                    if (item.sg_item && item.sg_item !== '無' && item.sg_item !== item.mops_item) {
-                        tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5">零</span>`;
-                    }
-                } else if (item.sg_item && item.sg_item !== '無' && !item.needs_debug) {
-                    tag = `<span class="text-slate-400 font-normal text-[10px] align-top ml-0.5">預</span>`;
+                const hasSg = item.sg_item && item.sg_item !== "無";
+                const hasMops = item.mops_item && item.mops_item !== "" && item.mops_item !== "無";
+                
+                if (hasMops && hasSg && item.sg_item !== item.mops_item) {
+                    tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5">零</span>`;
+                } else if (hasMops && !hasSg) {
+                    tag = `<span class="text-red-600 font-bold text-[10px] align-top ml-0.5">公</span>`;
                 }
 
                 let buyClass = "";
@@ -288,7 +280,7 @@
                     <td class="px-3 py-2">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
                     <td class="px-3 py-2 text-slate-900 text-xs whitespace-nowrap">${item.update_date || ''}</td>
                     <td class="px-3 py-2 text-xs text-slate-600 truncate max-w-[200px]" title="${condText}">${condText}</td>
-                    <td class="px-3 py-2 font-semibold text-slate-700 whitespace-nowrap">${item.meeting_type}</td>
+                    <td class="px-3 py-2 font-semibold text-slate-700 whitespace-nowrap">${item.meeting_type.includes("臨時") ? "臨時" : "常會"}</td>
                 </tr>`;
             }).join('');
         } else {
@@ -297,7 +289,6 @@
             const lastYear = (thisYear - 1).toString();
             document.getElementById('body-history').innerHTML = data.map(item => {
                 const p1Match = dbPage1.find(p => p.stock_id === item.stock_id);
-                const lastItem = item.history?.[lastYear]?.item || '-';
                 return `
                 <tr class="hover:bg-slate-50 transition border-b">
                     <td class="px-4 py-3 font-mono text-slate-700">${item.stock_id}</td>
@@ -307,15 +298,22 @@
                     <td class="px-4 py-3">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
                     <td class="px-4 py-3 text-xs text-slate-700">${p1Match ? p1Match.condition : ''}</td>
                     <td class="px-4 py-3 font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br>${item.stats.logHTML}'>
-                        ${lastItem}
+                        ${item.history?.[lastYear]?.item || '-'}
                     </td>
                 </tr>`;
             }).join('');
         }
     }
 
+    // 頁籤切換樣式修復
     function switchTab(tab) {
         currentTab = tab;
+        const actBtn = tab === 'current' ? 'tab-current' : 'tab-history';
+        const inactBtn = tab === 'current' ? 'tab-history' : 'tab-current';
+        
+        document.getElementById(actBtn).className = "px-4 py-1.5 rounded-md text-sm font-bold bg-indigo-900 shadow-inner ring-1 ring-indigo-400";
+        document.getElementById(inactBtn).className = "px-4 py-1.5 rounded-md text-sm font-medium hover:bg-indigo-600 transition";
+        
         document.getElementById('page-current').className = tab === 'current' ? 'block' : 'hidden';
         document.getElementById('page-history').className = tab === 'history' ? 'block' : 'hidden';
         renderData();
