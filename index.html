@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>股東會紀念品戰情室</title>
-    <!-- 使用 Tailwind CSS 加速開發 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* 全域動態浮動視窗 (徹底解決表格內裁切問題) */
         #global-tooltip {
             position: fixed; visibility: hidden; opacity: 0;
             background-color: #1e293b; color: #f8fafc; text-align: left;
@@ -16,28 +14,47 @@
             box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5); border: 1px solid #334155;
             font-size: 13px; line-height: 1.6; max-width: 260px;
         }
-
-        /* 狀態顏色定義 (強制覆蓋 Tailwind 預設) */
-        .bg-strict { background-color: #fca5a5 !important; } /* 紅底 (嚴格條件) */
-        .bg-gift { background-color: #bbf7d0 !important; }   /* 綠底 (超商禮券) */
-        .bg-missing { background-color: #fef08a !important; } /* 黃底 (空條件) */
-        .bg-danger { background-color: #fee2e2 !important; } /* 淺紅底 (缺買進日) */
-        .text-expired { color: #dc2626 !important; font-weight: 800; } /* 紅字粗體 (過期) */
+        .bg-strict { background-color: #fca5a5 !important; }
+        .bg-gift { background-color: #bbf7d0 !important; }
+        .bg-missing { background-color: #fef08a !important; }
+        .bg-danger { background-color: #fee2e2 !important; }
+        .text-expired { color: #dc2626 !important; font-weight: 800; }
         
-        /* 表頭固定與排序 UI */
         th.sticky-header {
             position: sticky; top: 0; z-index: 20; background-color: #f1f5f9;
             box-shadow: 0 2px 4px -1px rgba(0,0,0,0.1);
         }
-        .sortable { cursor: pointer; user-select: none; }
+        .sortable { cursor: pointer; user-select: none; transition: background-color 0.2s; }
         .sortable:hover { background-color: #e2e8f0; }
-        .sort-icon { font-size: 0.75rem; color: #94a3b8; margin-left: 4px; }
-        .sort-active { color: #4f46e5; font-weight: bold; }
+
+        /* 雙三角形圖標樣式 */
+        .sort-container {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin-left: 4px;
+            line-height: 1;
+        }
+        .tri-up {
+            width: 0; height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 5px solid #cbd5e1; /* 預設灰色 */
+            margin-bottom: 2px;
+        }
+        .tri-down {
+            width: 0; height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid #cbd5e1; /* 預設灰色 */
+        }
+        /* 選用條件：上三角形變藍色 (#3b82f6) */
+        .active-sort .tri-up { border-bottom-color: #3b82f6; }
     </style>
 </head>
 <body class="bg-slate-50 min-h-screen text-slate-800">
 
-<!-- 頂部導覽列 -->
 <nav class="bg-indigo-800 text-white shadow-md sticky top-0 z-30">
     <div class="max-w-[98%] mx-auto px-4">
         <div class="flex items-center justify-between h-14">
@@ -56,35 +73,39 @@
 </nav>
 
 <main class="max-w-[98%] mx-auto py-6">
-    
-    <!-- 圖例說明區塊 (Legend Box) -->
-    <div id="legend-box" class="mb-4 flex flex-wrap gap-4 text-xs bg-white p-3 rounded-lg shadow-sm border border-slate-200 items-center">
-        <div class="font-bold text-slate-700 text-sm mr-2 border-r pr-4">💡 顏色圖例</div>
-        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-[#fca5a5] inline-block border border-red-300"></span> 條件嚴格 (身分證/不開放委託)</div>
-        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-[#bbf7d0] inline-block border border-green-400"></span> 超商商品卡/禮券</div>
-        <div class="flex items-center gap-1.5"><span class="w-3.5 h-3.5 rounded bg-[#fee2e2] inline-block border border-red-200"></span> 缺最後買進日</div>
-        <div class="flex items-center gap-1.5 border-l pl-4"><span class="text-red-700 font-bold">深紅粗體</span> 發放/蓋牌率 &lt; 50%</div>
-        <div class="flex items-center gap-1.5"><span class="text-red-500 font-bold">淺紅粗體</span> 發放/蓋牌率 50% ~ 79%</div>
-        <div class="flex items-center gap-1.5"><span class="text-green-600 font-bold">綠字粗體</span> 曾翻盤過 (機率 &gt; 0%)</div>
-    </div>
-
     <!-- 當下會議 Page -->
     <div id="page-current" class="block">
         <div class="overflow-x-auto bg-white rounded-lg shadow border border-slate-200 max-h-[80vh]">
             <table class="min-w-full divide-y divide-slate-200 text-sm">
                 <thead class="bg-slate-100 text-slate-700 font-bold">
                     <tr>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')">代號 <span class="sort-icon" id="sort-stock_id"></span></th>
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')" title="零: 內容與公文衝突 / 預: 公文未出，引用預測">
+                            代號 <div class="sort-container" id="icon-stock_id"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap">名稱</th>
-                        <th class="sticky-header px-3 py-3 text-left">股價</th>
-                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('last_buy')">最後買進日 <span class="sort-icon" id="sort-last_buy"></span></th>
-                        <th class="sticky-header px-3 py-3 text-left w-1/5">紀念品</th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('ir')">5年發放率 <span class="sort-icon" id="sort-ir"></span></th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('hr')">5年蓋牌率 <span class="sort-icon" id="sort-hr"></span></th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')">5年翻盤率 <span class="sort-icon" id="sort-fr"></span></th>
-                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('update_date')">更新日期 <span class="sort-icon" id="sort-update_date"></span></th>
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('price')">
+                            股價 <div class="sort-container" id="icon-price"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('last_buy')" title="紅底: 缺日期 / 紅字: 已過期">
+                            最後買進日 <div class="sort-container" id="icon-last_buy"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
+                        <th class="sticky-header px-3 py-3 text-left w-1/5" title="紅底: 條件嚴格 / 綠底: 超商禮券">紀念品</th>
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('ir')" title="<=40%: 粉紅底深紅字 / <=50%: 深紅字">
+                            發放率 <div class="sort-container" id="icon-ir"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('hr')" title=">=50%: 深紅字 / 100%: 粉紅底深紅字">
+                            蓋牌率 <div class="sort-container" id="icon-hr"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')" title="綠字: 曾有翻盤紀錄">
+                            翻盤率 <div class="sort-container" id="icon-fr"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('update_date')">
+                            更新日期 <div class="sort-container" id="icon-update_date"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
                         <th class="sticky-header px-3 py-3 text-left w-1/5">條件</th>
-                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap">性質</th>
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('meeting_type')">
+                            性質 <div class="sort-container" id="icon-meeting_type"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
                     </tr>
                 </thead>
                 <tbody id="body-current" class="divide-y divide-slate-100"></tbody>
@@ -98,11 +119,19 @@
             <table class="min-w-full divide-y divide-slate-200 text-sm">
                 <thead class="bg-slate-100 text-slate-700 font-bold">
                     <tr>
-                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('stock_id')">代號 <span class="sort-icon" id="sort-stock_id-hist"></span></th>
+                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('stock_id')">
+                            代號 <div class="sort-container" id="icon-stock_id-hist"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
                         <th class="sticky-header px-4 py-3 text-left">名稱</th>
-                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('ir')">5年發放率 <span class="sort-icon" id="sort-ir-hist"></span></th>
-                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('hr')">5年蓋牌率 <span class="sort-icon" id="sort-hr-hist"></span></th>
-                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('fr')">5年翻盤率 <span class="sort-icon" id="sort-fr-hist"></span></th>
+                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('ir')">
+                            發放率 <div class="sort-container" id="icon-ir-hist"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
+                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('hr')">
+                            蓋牌率 <div class="sort-container" id="icon-hr-hist"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
+                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('fr')">
+                            翻盤率 <div class="sort-container" id="icon-fr-hist"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        </th>
                         <th class="sticky-header px-4 py-3 text-left w-1/3">條件</th>
                         <th class="sticky-header px-4 py-3 text-left">上次紀念品</th>
                     </tr>
@@ -113,7 +142,6 @@
     </div>
 </main>
 
-<!-- 全域 Tooltip 容器 (必須放在 body 最底層) -->
 <div id="global-tooltip"></div>
 
 <script>
@@ -122,7 +150,6 @@
     const thisYear = new Date().getFullYear();
     const todayStr = new Date().toISOString().split('T')[0].replace(/-/g, '/');
 
-    // 排序狀態 (Page1 預設更新日期由近到遠，Page2 預設代號由小到大)
     let sortState = {
         current: { key: 'update_date', asc: false },
         history: { key: 'stock_id', asc: true }
@@ -130,49 +157,32 @@
 
     async function loadData() {
         try {
-            // 動態取得當前路徑，確保 GitHub Pages 不會報 404 錯誤
             const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
             const [resH, resP1] = await Promise.all([
                 fetch(`${basePath}/data/db_history.json`).then(r => r.json()),
                 fetch(`${basePath}/data/db_page1.json`).then(r => r.json())
             ]);
-            
-            // 預先計算並綁定所有統計資料 (加速排序與渲染效能)
             dbHistory = resH.map(item => ({ ...item, stats: getStats(item, true) }));
             dbPage1 = resP1.map(item => ({ ...item, stats: getStats(dbHistory.find(h => h.stock_id === item.stock_id), false) }));
-            
             renderData();
-        } catch (e) {
-            console.error("資料載入失敗:", e);
-            document.getElementById('body-current').innerHTML = `<tr><td colspan="11" class="text-center text-red-500 font-bold py-8">資料載入失敗：${e.message} <br>請檢查 GitHub 上的 data/ 資料夾與 JSON 檔案是否存在。</td></tr>`;
-        }
+        } catch (e) { console.error("資料載入失敗:", e); }
     }
 
-    // 計算 5年/10年 機率與歷史軌跡
     function getStats(h, isTenYears) {
         let logs = [];
         let issues = 0, hides = 0, flips = 0;
         const loopYears = isTenYears ? 10 : 5;
-        
         for (let i = 1; i <= loopYears; i++) {
             const y = thisYear - i;
             const rec = h?.history?.[y.toString()];
             const s = rec?.status || "";
-            const item = rec?.item || "未公告";
-            
-            if (isTenYears && y === 2016 && !rec) {
-                logs.push(`<span class="text-red-500 font-bold">(2016)無資料</span>`);
-            } else {
-                logs.push(`(${y})${item}`);
-            }
-
+            logs.push(`(${y})${rec?.item || "未公告"}`);
             if (i <= 5) {
                 if (s.includes("發放")) issues++;
                 if (s.includes("待公布->發放") || s.includes("待公布 -> 發放")) hides++;
                 if (s.includes("不發放->發放") || s.includes("不發放 -> 發放")) flips++;
             }
         }
-        
         return {
             irRaw: issues / 5, hrRaw: hides / 5, frRaw: flips / 5,
             irStr: Math.round((issues / 5) * 100) + '%',
@@ -182,15 +192,23 @@
         };
     }
 
-    // 機率動態上色邏輯
+    // 更新機率上色邏輯
     function colorRate(raw, str, type) {
         if (type === 'flip') return raw > 0 ? `<span class="text-green-600 font-bold">${str}</span>` : str;
-        if (raw < 0.5) return `<span class="text-red-700 font-bold">${str}</span>`; // < 50 深紅
-        if (raw < 0.8) return `<span class="text-red-500 font-bold">${str}</span>`; // 50~79 淺紅
-        return str; // >= 80 一般格式
+        
+        // 發放率：<=40% 粉紅底深紅字，<=50% 深紅字
+        if (type === 'issue') {
+            if (raw <= 0.4) return `<span class="bg-[#fee2e2] text-red-700 font-bold px-1 rounded">${str}</span>`;
+            if (raw <= 0.5) return `<span class="text-red-700 font-bold">${str}</span>`;
+        }
+        // 蓋牌率：>=50% 深紅字，100% 粉紅底深紅字
+        if (type === 'hide') {
+            if (raw === 1.0) return `<span class="bg-[#fee2e2] text-red-700 font-bold px-1 rounded">${str}</span>`;
+            if (raw >= 0.5) return `<span class="text-red-700 font-bold">${str}</span>`;
+        }
+        return str;
     }
 
-    // 切換排序鍵值
     function setSort(key) {
         let s = sortState[currentTab];
         if (s.key === key) s.asc = !s.asc;
@@ -198,18 +216,19 @@
         renderData();
     }
 
-    // 執行資料排序
     function sortData(dataArray) {
         let s = sortState[currentTab];
         return dataArray.sort((a, b) => {
             let valA, valB;
             switch(s.key) {
                 case 'stock_id': valA = a.stock_id; valB = b.stock_id; break;
-                case 'last_buy': valA = a.last_buy || ''; valB = b.last_buy || ''; break;
+                case 'price': valA = parseFloat(a.price) || 0; valB = parseFloat(b.price) || 0; break;
+                case 'last_buy': valA = (a.last_buy || '').split(' ')[0]; valB = (b.last_buy || '').split(' ')[0]; break;
                 case 'update_date': valA = a.update_date || '1970/01/01'; valB = b.update_date || '1970/01/01'; break;
                 case 'ir': valA = a.stats.irRaw; valB = b.stats.irRaw; break;
                 case 'hr': valA = a.stats.hrRaw; valB = b.stats.hrRaw; break;
                 case 'fr': valA = a.stats.frRaw; valB = b.stats.frRaw; break;
+                case 'meeting_type': valA = a.meeting_type; valB = b.meeting_type; break;
             }
             if (valA < valB) return s.asc ? -1 : 1;
             if (valA > valB) return s.asc ? 1 : -1;
@@ -220,82 +239,65 @@
     function renderData() {
         const q = document.getElementById('searchInput').value.toLowerCase();
         
-        // 更新排序 Icon 顯示
-        document.querySelectorAll('.sort-icon').forEach(el => { el.innerHTML = ''; el.classList.remove('sort-active'); });
+        // 更新排序圖標：選中的欄位上三角形變藍色
+        document.querySelectorAll('.sort-container').forEach(el => el.classList.remove('active-sort'));
         let s = sortState[currentTab];
         let suffix = currentTab === 'history' ? '-hist' : '';
-        let iconEl = document.getElementById(`sort-${s.key}${suffix}`);
-        if(iconEl) {
-            iconEl.innerHTML = s.asc ? '▲' : '▼';
-            iconEl.classList.add('sort-active');
-        }
+        let iconEl = document.getElementById(`icon-${s.key}${suffix}`);
+        if(iconEl) iconEl.classList.add('active-sort');
 
         if (currentTab === 'current') {
             let data = dbPage1.filter(i => i.stock_id.includes(q) || i.stock_name.includes(q));
             data = sortData(data);
-
             document.getElementById('body-current').innerHTML = data.map(item => {
                 const condText = item.condition || '';
-                
-                // 來源標註 (零 / 公)
                 let tag = "";
-                if (item.sg_item && item.sg_item !== '無' && (!item.mops_item || item.mops_item === '無')) tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5">零</span>`;
-                else if (item.mops_item && item.mops_item !== '無' && (!item.sg_item || item.sg_item === '無')) tag = `<span class="text-red-600 font-bold text-[10px] align-top ml-0.5">公</span>`;
+                if (item.mops_item && item.mops_item !== "" && item.mops_item !== "無") {
+                    if (item.sg_item && item.sg_item !== '無' && item.sg_item !== item.mops_item) {
+                        tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5">零</span>`;
+                    }
+                } else if (item.sg_item && item.sg_item !== '無' && !item.needs_debug) {
+                    tag = `<span class="text-slate-400 font-normal text-[10px] align-top ml-0.5">預</span>`;
+                }
 
-                // 買進日過期與空值邏輯 (擷取日期字串比對)
                 let buyClass = "";
-                if (!item.last_buy) {
-                    buyClass = "bg-danger";
-                } else {
+                if (!item.last_buy) buyClass = "bg-danger";
+                else {
                     const cleanDate = item.last_buy.split(' ')[0];
                     if (cleanDate < todayStr) buyClass = "text-expired";
                 }
 
-                // 紀念品顯示邏輯
                 let displayItem = item.sg_item === item.mops_item ? (item.sg_item || '未公告') : `[${item.sg_item || '無'}] / [${item.mops_item || '無'}]`;
-                if (item.needs_debug) displayItem = `<span class="text-red-600 font-bold underline">多次查無按鈕(需確認)</span>`;
+                if (item.needs_debug) displayItem = `<span class="text-red-600 font-bold underline">查無詳細按鈕</span>`;
 
-                // 條件與超商背景色邏輯 (嚴格條件優先)
                 const isStrict = /身分|身份|證件|正本|不開放|委託/.test(condText);
-                const isGift = /7-11|統一|全家|超商|商品卡|商品券|禮物卡|禮券|即享/.test(displayItem) && !/咖啡|美式/.test(displayItem);
+                const isGift = /7-11|統一|全家|超商|商品卡|禮券/.test(displayItem);
                 let souvenirBg = isStrict ? "bg-strict" : (isGift ? "bg-gift" : "");
-                
-                // Tooltip 內容 (藏在 data-tip 屬性)
-                let tipContent = `<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br>${item.stats.logHTML}`;
 
                 return `
-                <tr class="hover:bg-slate-50 transition border-b ${item.needs_debug ? 'bg-red-50' : ''}">
+                <tr class="hover:bg-slate-50 transition border-b">
                     <td class="px-3 py-2 font-mono text-slate-700">${item.stock_id}${tag}</td>
                     <td class="px-3 py-2 font-bold text-slate-900 whitespace-nowrap">${item.stock_name}</td>
                     <td class="px-3 py-2 text-slate-600">${item.price || '-'}</td>
-                    <td class="px-3 py-2 ${buyClass}">${item.last_buy || ''}</td>
-                    <td class="px-3 py-2 ${souvenirBg} font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='${tipContent}'>
+                    <td class="px-3 py-2 ${buyClass} whitespace-nowrap">${item.last_buy || ''}</td>
+                    <td class="px-3 py-2 ${souvenirBg} font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br>${item.stats.logHTML}'>
                         ${displayItem}
                     </td>
                     <td class="px-3 py-2">${colorRate(item.stats.irRaw, item.stats.irStr, 'issue')}</td>
                     <td class="px-3 py-2">${colorRate(item.stats.hrRaw, item.stats.hrStr, 'hide')}</td>
                     <td class="px-3 py-2">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
-                    <td class="px-3 py-2 text-slate-400 text-xs whitespace-nowrap">${item.update_date || ''}</td>
+                    <td class="px-3 py-2 text-slate-900 text-xs whitespace-nowrap">${item.update_date || ''}</td>
                     <td class="px-3 py-2 text-xs text-slate-600 truncate max-w-[200px]" title="${condText}">${condText}</td>
                     <td class="px-3 py-2 font-semibold text-slate-700 whitespace-nowrap">${item.meeting_type}</td>
                 </tr>`;
             }).join('');
-            
         } else {
             let data = dbHistory.filter(i => i.stock_id.includes(q) || i.stock_name.includes(q));
             data = sortData(data);
             const lastYear = (thisYear - 1).toString();
-
             document.getElementById('body-history').innerHTML = data.map(item => {
-                const p1Match = dbPage1.find(p => p.stock_id === item.stock_id && p.meeting_type === "常會");
-                const condText = p1Match ? p1Match.condition : '';
-                
-                const isStrict = /身分|身份|證件|正本|不開放|委託/.test(condText);
-                let condBg = isStrict ? "bg-strict" : (!condText ? "bg-missing" : "");
+                const p1Match = dbPage1.find(p => p.stock_id === item.stock_id);
                 const lastItem = item.history?.[lastYear]?.item || '-';
-                
-                let tipContent = `<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br>${item.stats.logHTML}`;
-
                 return `
                 <tr class="hover:bg-slate-50 transition border-b">
                     <td class="px-4 py-3 font-mono text-slate-700">${item.stock_id}</td>
@@ -303,8 +305,8 @@
                     <td class="px-4 py-3">${colorRate(item.stats.irRaw, item.stats.irStr, 'issue')}</td>
                     <td class="px-4 py-3">${colorRate(item.stats.hrRaw, item.stats.hrStr, 'hide')}</td>
                     <td class="px-4 py-3">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
-                    <td class="px-4 py-3 text-xs text-slate-700 ${condBg}">${condText}</td>
-                    <td class="px-4 py-3 font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='${tipContent}'>
+                    <td class="px-4 py-3 text-xs text-slate-700">${p1Match ? p1Match.condition : ''}</td>
+                    <td class="px-4 py-3 font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br>${item.stats.logHTML}'>
                         ${lastItem}
                     </td>
                 </tr>`;
@@ -312,56 +314,23 @@
         }
     }
 
-    // 分頁切換
     function switchTab(tab) {
         currentTab = tab;
         document.getElementById('page-current').className = tab === 'current' ? 'block' : 'hidden';
         document.getElementById('page-history').className = tab === 'history' ? 'block' : 'hidden';
-        document.getElementById('legend-box').className = tab === 'current' ? 'mb-4 flex flex-wrap gap-4 text-xs bg-white p-3 rounded-lg shadow-sm border border-slate-200 items-center' : 'hidden';
-        
-        const actClass = "px-4 py-1.5 rounded-md text-sm font-bold bg-indigo-900 shadow-inner ring-1 ring-indigo-400";
-        const inactClass = "px-4 py-1.5 rounded-md text-sm font-medium hover:bg-indigo-600 transition";
-        document.getElementById('tab-current').className = tab === 'current' ? actClass : inactClass;
-        document.getElementById('tab-history').className = tab === 'history' ? actClass : inactClass;
-        
         renderData();
     }
 
-    // ==========================================
-    // 完美解決裁切的全域 Tooltip 邏輯
-    // ==========================================
     const tooltip = document.getElementById('global-tooltip');
-    
-    function showTip(e, el) {
-        tooltip.innerHTML = el.getAttribute('data-tip');
-        tooltip.style.visibility = 'visible';
-        tooltip.style.opacity = '1';
-        moveTip(e);
-    }
-    
+    function showTip(e, el) { tooltip.innerHTML = el.getAttribute('data-tip'); tooltip.style.visibility = 'visible'; tooltip.style.opacity = '1'; moveTip(e); }
     function moveTip(e) {
-        // 設定游標旁邊的偏移量
-        let x = e.clientX + 15;
-        let y = e.clientY + 15;
-        
-        // 邊界碰撞偵測：如果加上視窗寬高後超過螢幕邊界，則自動往反方向顯示
-        if (x + tooltip.offsetWidth > window.innerWidth) { 
-            x = e.clientX - tooltip.offsetWidth - 15; 
-        }
-        if (y + tooltip.offsetHeight > window.innerHeight) { 
-            y = e.clientY - tooltip.offsetHeight - 15; 
-        }
-        
-        tooltip.style.left = x + 'px';
-        tooltip.style.top = y + 'px';
+        let x = e.clientX + 15, y = e.clientY + 15;
+        if (x + tooltip.offsetWidth > window.innerWidth) x = e.clientX - tooltip.offsetWidth - 15;
+        if (y + tooltip.offsetHeight > window.innerHeight) y = e.clientY - tooltip.offsetHeight - 15;
+        tooltip.style.left = x + 'px'; tooltip.style.top = y + 'px';
     }
+    function hideTip() { tooltip.style.opacity = '0'; tooltip.style.visibility = 'hidden'; }
 
-    function hideTip() {
-        tooltip.style.opacity = '0';
-        tooltip.style.visibility = 'hidden';
-    }
-
-    // 啟動應用程式
     loadData();
 </script>
 </body>
