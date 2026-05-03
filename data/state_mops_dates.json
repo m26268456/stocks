@@ -3741,7 +3741,8 @@
   },
   "6419_常會": {
     "time": "115/04/28 10:47:01",
-    "pending": true
+    "pending": false,
+    "fail_count": 2
   },
   "6432_常會": {
     "time": "115/04/08 10:54:13",
@@ -4185,7 +4186,8 @@
   },
   "8489_常會": {
     "time": "115/04/20 09:38:37",
-    "pending": true
+    "pending": false,
+    "fail_count": 2
   },
   "8905_常會": {
     "time": "115/04/28 09:27:12",
@@ -4194,7 +4196,8 @@
   },
   "8908_常會": {
     "time": "115/04/15 16:57:03",
-    "pending": true
+    "pending": false,
+    "fail_count": 2
   },
   "8916_常會": {
     "time": "115/03/27 14:42:21",
@@ -4453,18 +4456,22 @@
   },
   "4946_臨時會": {
     "time": "114/11/24 17:08:49",
-    "pending": true
+    "pending": false,
+    "fail_count": 2
   },
   "6419_臨時會": {
     "time": "115/01/20 10:49:34",
-    "pending": true
+    "pending": false,
+    "fail_count": 2
   },
   "8489_臨時會": {
     "time": "114/12/26 15:42:29",
-    "pending": true
+    "pending": false,
+    "fail_count": 2
   },
   "8908_臨時會": {
     "time": "114/11/13 19:21:51",
-    "pending": true
+    "pending": false,
+    "fail_count": 2
   }
 }
