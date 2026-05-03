@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>股東會紀念品戰情室</title>
+    <title>股東會紀念品情報</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         #global-tooltip {
@@ -12,7 +12,7 @@
             border-radius: 8px; padding: 12px 16px; z-index: 9999;
             pointer-events: none; transition: opacity 0.15s;
             box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5); border: 1px solid #334155;
-            font-size: 13px; line-height: 1.6; max-width: 260px;
+            font-size: 13px; line-height: 1.6; max-width: 280px;
         }
         .bg-strict { background-color: #fca5a5 !important; }
         .bg-gift { background-color: #bbf7d0 !important; }
@@ -36,17 +36,15 @@
         }
         .tri-up {
             width: 0; height: 0;
-            border-left: 4px solid transparent;
-            border-right: 4px solid transparent;
-            border-bottom: 5px solid #cbd5e1;
-            margin-bottom: 2px;
+            border-left: 4px solid transparent; border-right: 4px solid transparent;
+            border-bottom: 5px solid #cbd5e1; margin-bottom: 2px;
         }
         .tri-down {
             width: 0; height: 0;
-            border-left: 4px solid transparent;
-            border-right: 4px solid transparent;
+            border-left: 4px solid transparent; border-right: 4px solid transparent;
             border-top: 5px solid #cbd5e1;
         }
+        /* 當前選用的條件：上三角形變藍色 */
         .active-sort .tri-up { border-bottom-color: #3b82f6; }
     </style>
 </head>
@@ -75,24 +73,24 @@
             <table class="min-w-full divide-y divide-slate-200 text-sm">
                 <thead class="bg-slate-100 text-slate-700 font-bold">
                     <tr>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')" title="[標籤說明] 綠色零: 零股寶與公文內容衝突 / 紅色公: 僅有公文資料">
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>標籤說明</b><br><span class='text-green-400'>零</span>：零股寶與公文內容衝突<br><span class='text-red-400'>公</span>：目前僅有公文資料">
                             代號 <div class="sort-container" id="icon-stock_id"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap">名稱</th>
                         <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('price')">
                             股價 <div class="sort-container" id="icon-price"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('last_buy')" title="[顏色說明] 淺紅底: 缺買進日資料 / 紅字粗體: 已過最後買進日">
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('last_buy')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>顏色說明</b><br><span class='bg-red-200 text-slate-800 px-1'>淺紅底</span>：缺少買進日資料<br><span class='text-red-500 font-bold'>紅字粗體</span>：已過最後買進日">
                             最後買進日 <div class="sort-container" id="icon-last_buy"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left w-1/5" title="[底色說明] 紅底: 領取條件嚴格 / 綠底: 超商禮券或商品卡">紀念品</th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('ir')" title="[顏色說明] 淺紅底: 發放率 <= 40% / 深紅字: 發放率 <= 50%">
+                        <th class="sticky-header px-3 py-3 text-left w-1/5" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>底色說明</b><br><span class='bg-red-300 text-slate-800 px-1'>紅底</span>：領取條件嚴格 (身分證/不開放委託)<br><span class='bg-green-200 text-slate-800 px-1'>綠底</span>：超商禮券或商品卡">紀念品</th>
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('ir')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>顏色說明</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：發放率 ≤ 40%<br><span class='text-red-700 font-bold'>深紅字</span>：發放率 ≤ 50%">
                             發放率 <div class="sort-container" id="icon-ir"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('hr')" title="[顏色說明] 淺紅底: 蓋牌率 = 100% / 深紅字: 蓋牌率 >= 50%">
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('hr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>顏色說明</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：蓋牌率 = 100%<br><span class='text-red-700 font-bold'>深紅字</span>：蓋牌率 ≥ 50%">
                             蓋牌率 <div class="sort-container" id="icon-hr"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')" title="[顏色說明] 綠字粗體: 過去五年曾有翻盤紀錄">
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>顏色說明</b><br><span class='text-green-600 font-bold'>綠字粗體</span>：過去五年內曾有翻盤紀錄">
                             翻盤率 <div class="sort-container" id="icon-fr"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('update_date')">
@@ -286,7 +284,6 @@
         } else {
             let data = dbHistory.filter(i => i.stock_id.includes(q) || i.stock_name.includes(q));
             data = sortData(data);
-            const lastYear = (thisYear - 1).toString();
             document.getElementById('body-history').innerHTML = data.map(item => {
                 const p1Match = dbPage1.find(p => p.stock_id === item.stock_id);
                 return `
@@ -298,14 +295,13 @@
                     <td class="px-4 py-3">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
                     <td class="px-4 py-3 text-xs text-slate-700">${p1Match ? p1Match.condition : ''}</td>
                     <td class="px-4 py-3 font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br>${item.stats.logHTML}'>
-                        ${item.history?.[lastYear]?.item || '-'}
+                        ${item.history?.[(thisYear - 1).toString()]?.item || '-'}
                     </td>
                 </tr>`;
             }).join('');
         }
     }
 
-    // 頁籤切換樣式修復
     function switchTab(tab) {
         currentTab = tab;
         const actBtn = tab === 'current' ? 'tab-current' : 'tab-history';
