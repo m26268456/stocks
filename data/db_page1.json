@@ -9,7 +9,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "折疊環保提包(不足時以等值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "24.50",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1103",
@@ -21,7 +23,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "飛狼不銹鋼真空陶瓷塗層雙飲杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.45",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1104",
@@ -33,7 +37,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.35",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "1201",
@@ -45,7 +51,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家企業禮贈卡(林鳳營全脂鮮乳338ML)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.50",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "1203",
@@ -57,7 +65,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "王子杯麵2杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "43.60",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1210",
@@ -69,7 +79,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "53.40",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1215",
@@ -81,7 +93,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "雞肉鬆乙包",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "138.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1217",
@@ -93,7 +107,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "愛之味古法濃香初榨花生油(100ml)1瓶或其他等值商品",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "9.90",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1218",
@@ -105,7 +121,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.95",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1219",
@@ -117,7 +135,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "福壽香油",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.50",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1220",
@@ -129,7 +149,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "中性濃縮洗衣精",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.50",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1225",
@@ -139,9 +161,12 @@
     "sg_status": "發放",
     "sg_item": "全家超商禮物卡50元",
     "condition": "電子投票截圖",
-    "mops_status": "發放",
-    "mops_item": "全家超商禮物卡50元",
-    "update_date": "2026/05/03"
+    "mops_status": "⚠️ 異常",
+    "mops_item": "多次查無按鈕，請手動 Debug",
+    "update_date": "2026/05/03",
+    "price": "32.00",
+    "last_buy": "2026/04/23 (四)",
+    "needs_debug": true
   },
   {
     "stock_id": "1225",
@@ -151,9 +176,12 @@
     "sg_status": "待公布",
     "sg_item": "無",
     "condition": "",
-    "mops_status": "不發放",
-    "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "mops_status": "",
+    "mops_item": "",
+    "update_date": "2026/05/03",
+    "price": "32.00",
+    "last_buy": "2026/03/13 (五)",
+    "needs_debug": false
   },
   {
     "stock_id": "1305",
@@ -165,7 +193,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "ＵSii優系高阻氧封味鎖鮮袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.85",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "1308",
@@ -177,7 +207,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "ＵSii優系高阻氧封味鎖鮮袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "15.05",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1309",
@@ -189,7 +221,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "ＵSii優系高阻氧封味鎖鮮袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.80",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1310",
@@ -201,7 +235,9 @@
     "condition": "寄單(開會通知書)和電子投票截圖和身分證件正本(僅限身分證正本(未成年人為戶口名簿及父母證件)) 紀念品價值低,又要求寄單,用戶掛號費都大於紀念品價值了,故不開放委託",
     "mops_status": "發放",
     "mops_item": "常健順暢益生菌",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "9.50",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "1312",
@@ -213,7 +249,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "康寧SNAPWARE耐熱玻璃儲物罐二入組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.30",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1314",
@@ -225,7 +263,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿正本)) 限身分證正本(未滿14歲為戶口名簿正本)",
     "mops_status": "發放",
     "mops_item": "統一超商100元商品卡（紀念品數量若有不足",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "7.42",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1316",
@@ -237,7 +277,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "【朝和生醫】保健食品乙包",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.00",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1323",
@@ -249,7 +291,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.30",
+    "last_buy": "2026/03/31 (二)"
   },
   {
     "stock_id": "1324",
@@ -261,7 +305,9 @@
     "condition": "電子投票截圖 領取地點在桃園",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.55",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1325",
@@ -273,7 +319,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "口罩壹盒",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "26.20",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1337",
@@ -285,7 +333,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "居慕洗手液",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "5.02",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1338",
@@ -297,7 +347,9 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.35",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1340",
@@ -309,7 +361,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "超商券(等值台幣50元)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "5.77",
+    "last_buy": "2026/04/07 (二)"
   },
   {
     "stock_id": "1409",
@@ -321,7 +375,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "保溫保冷袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.80",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1414",
@@ -333,7 +389,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "襪子乙雙(不足時以等值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.65",
+    "last_buy": "2026/04/14 (二)"
   },
   {
     "stock_id": "1416",
@@ -345,7 +403,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證或健保卡正本) 不開放委託,限\"有效\"身分證正本(未滿14歲為戶口名簿正本)嘉義領取,當天需要其他證件與該物品價值不",
     "mops_status": "發放",
     "mops_item": "毛巾",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.40",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1417",
@@ -357,7 +417,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "機能襪",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "8.85",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1418",
@@ -369,7 +431,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "皮革收納(修容護理四件組)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.20",
+    "last_buy": "2026/04/07 (二)"
   },
   {
     "stock_id": "1423",
@@ -381,7 +445,9 @@
     "condition": "電子投票截圖或身分證件圖片",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "41.60",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "1432",
@@ -393,7 +459,9 @@
     "condition": "(請自行透過APP領取) 不開放委託,請透過APP自行領取",
     "mops_status": "發放",
     "mops_item": "『800元消費抵用券』、『每月玩樂買1送1券』8張",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.85",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1435",
@@ -405,7 +473,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "1440",
@@ -417,7 +487,9 @@
     "condition": "身分證件正本 身分證、健保卡或駕照正本",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.65",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "1443",
@@ -429,7 +501,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.20",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "1449",
@@ -441,7 +515,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "佳和醫用口罩(未滅菌)或等值商品",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.95",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1452",
@@ -453,7 +529,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "濕紙巾",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.40",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1463",
@@ -465,7 +543,9 @@
     "condition": "電子投票截圖 面額不明以35元計,請確定是否轉售平台",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.90",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1464",
@@ -477,7 +557,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.00",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "1466",
@@ -489,7 +571,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.30",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "1471",
@@ -501,7 +585,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證)",
     "mops_status": "發放",
     "mops_item": "油壺",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.30",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1503",
@@ -513,7 +599,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "充電式六段多功能手電筒(紀念品數量如有不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "189.50",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "1504",
@@ -525,7 +613,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "62.40",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1506",
@@ -537,7 +627,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.80",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1512",
@@ -549,7 +641,9 @@
     "condition": "身分證件正本 領取地點在高雄",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "7.48",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1513",
@@ -561,7 +655,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡 (數量如有不足",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "148.50",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "1514",
@@ -573,7 +669,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "足弓氣墊襪",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "110.00",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1516",
@@ -585,7 +683,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡面額35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.45",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1517",
@@ -597,7 +697,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "多功能手機支架",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.40",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1521",
@@ -609,7 +711,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "24.85",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1524",
@@ -621,7 +725,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "菜瓜布",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.15",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "1526",
@@ -633,7 +739,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "中杯熱美式咖啡券",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.35",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "1527",
@@ -645,7 +753,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "32.50",
+    "last_buy": "2026/04/14 (二)"
   },
   {
     "stock_id": "1528",
@@ -657,7 +767,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11 50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.80",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1529",
@@ -669,7 +781,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "便利商店禮物卡$35",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.70",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1536",
@@ -681,7 +795,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "51.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1538",
@@ -693,7 +809,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.35",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "1540",
@@ -705,7 +823,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "伊莎貝爾櫻花抗菌皂 重量：75g +13g 產地：印尼",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.95",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "1558",
@@ -717,7 +837,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "抗菌洗手露",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "92.20",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "1563",
@@ -729,7 +851,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "41.45",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1582",
@@ -741,7 +865,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-ELEVEN商品卡100元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "88.60",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1589",
@@ -753,7 +879,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/29 (三)"
   },
   {
     "stock_id": "1604",
@@ -765,7 +893,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "雨傘",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "22.90",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "1605",
@@ -777,7 +907,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "FDK三號鹼性電池一組(4入)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.15",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1609",
@@ -789,7 +921,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "32.20",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1611",
@@ -801,7 +935,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "50元超商禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.95",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "1702",
@@ -813,7 +949,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "水晶肥皂150克3入(數量如有不足",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "35.10",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "1707",
@@ -825,7 +963,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "葡萄王動能膠囊30粒/瓶(若發放完畢",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "112.50",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "1708",
@@ -837,7 +977,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "小蘇打粉",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "41.80",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1709",
@@ -849,7 +991,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本)",
     "mops_status": "發放",
     "mops_item": "德菲雅掛耳式咖啡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.65",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1711",
@@ -861,7 +1005,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照正本,egift實體有期限) 身分證、健保卡或駕照正本,egift實體有期限",
     "mops_status": "發放",
     "mops_item": "全家35元企業禮贈卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "56.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1712",
@@ -873,7 +1019,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "一滴淨奈米碳酸抗菌洗手乳1瓶【數量不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "42.20",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "1713",
@@ -885,7 +1033,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "46.30",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1714",
@@ -897,7 +1047,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "全家禮物卡⾯額50元⼄張",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "9.40",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1718",
@@ -909,7 +1061,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "燕窩飲一份",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "6.55",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1721",
@@ -921,7 +1075,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本)",
     "mops_status": "發放",
     "mops_item": "商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "24.20",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "1722",
@@ -933,7 +1089,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "50.70",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1723",
@@ -945,7 +1103,9 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "7-11 商品卡 50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "78.30",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "1732",
@@ -957,7 +1117,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "「毛寶小蘇打植萃香氛洗衣皂晶球」50g(5顆)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "25.80",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1733",
@@ -969,7 +1131,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "積木封口夾",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.55",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "1734",
@@ -981,7 +1145,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "茯苓善補B群膠囊20粒/瓶(若發放完畢",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "31.50",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "1737",
@@ -993,7 +1159,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "台塩生技UP機能吸凍1盒(數量如有不足",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "31.85",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "1760",
@@ -1005,7 +1173,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照正本) 身分證、健保卡或駕照正本",
     "mops_status": "發放",
     "mops_item": "",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "68.20",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "1762",
@@ -1017,7 +1187,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "綠的抗菌潔手慕斯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.25",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1783",
@@ -1029,7 +1201,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "38.90",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1786",
@@ -1041,7 +1215,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "57.50",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "1809",
@@ -1053,7 +1229,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "氣墊襪(顏色混搭",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "25.70",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "1904",
@@ -1065,7 +1243,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "春風官方購物商城AeSHOP折價券$200",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "17.60",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "1907",
@@ -1077,7 +1257,9 @@
     "condition": "台開大樓",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "23.60",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "1909",
@@ -1089,7 +1271,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "環保袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "9.05",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2002",
@@ -1101,7 +1285,9 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.75",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2006",
@@ -1113,7 +1299,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "皮革質感修容組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "65.20",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2012",
@@ -1125,7 +1313,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "神守精華膠囊",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.70",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2013",
@@ -1137,7 +1327,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "42.75",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2014",
@@ -1149,7 +1341,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商45元咖啡卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "17.60",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2020",
@@ -1161,7 +1355,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "22.15",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2022",
@@ -1173,7 +1369,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "蜂王清新植萃精華皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "8.12",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2023",
@@ -1185,7 +1383,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.00",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2024",
@@ -1197,7 +1397,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.10",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2025",
@@ -1209,7 +1411,9 @@
     "condition": "身分證件正本(領取地點在台南)",
     "mops_status": "發放",
     "mops_item": "香皂乙塊",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.05",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "2030",
@@ -1221,7 +1425,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "運動休閒毛巾襪",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "15.95",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2031",
@@ -1233,7 +1439,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "妙管家小蘇打抗菌洗衣精600g一份",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "40.65",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2038",
@@ -1245,7 +1453,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2102",
@@ -1257,7 +1467,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商商品卡(50元)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.80",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2103",
@@ -1269,7 +1481,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "休閒運動襪子禮盒(不足時以等值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.65",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2104",
@@ -1281,7 +1495,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "折疊環保提包(不足時以等值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.70",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2107",
@@ -1293,7 +1509,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商禮物卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "26.25",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2108",
@@ -1305,7 +1523,9 @@
     "condition": "身分證件正本 身分證、健保卡或駕照正本",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "26.70",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2109",
@@ -1317,7 +1537,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.40",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2206",
@@ -1329,7 +1551,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "三角斜背保溫保冷袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "55.50",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2208",
@@ -1341,7 +1565,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證、健保卡)",
     "mops_status": "發放",
     "mops_item": "統一超商45元咖啡卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.80",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2211",
@@ -1353,7 +1579,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "97.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2233",
@@ -1365,7 +1593,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "300.00",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2241",
@@ -1377,7 +1607,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "29.80",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2303",
@@ -1389,7 +1621,9 @@
     "condition": "電子投票截圖和身分證件正本(新竹領取;不論是否成年,限身分證、健保卡) 新竹領取;不論是否成年,限身分證、健保卡",
     "mops_status": "發放",
     "mops_item": "SNOOPY口袋保溫瓶",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "77.30",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2312",
@@ -1401,7 +1635,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "再生布卡夾",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "27.65",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2313",
@@ -1413,7 +1649,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "南僑清潔用品(或等值商品)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "244.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2314",
@@ -1425,7 +1663,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "英國貝爾熊香水洗衣精補充包",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2316",
@@ -1437,7 +1677,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照。另外也接受寄單（代替正本）。)",
     "mops_status": "發放",
     "mops_item": "方形玻璃保鮮盒",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "112.50",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2317",
@@ -1449,7 +1691,9 @@
     "condition": "(不需委託;自行登入領取即可故不開放委託) 不需委託;自行登入領取即可故不開放委託",
     "mops_status": "發放",
     "mops_item": "鴻海",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "219.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2323",
@@ -1461,7 +1705,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "水晶肥皂洗衣精",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.15",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2327",
@@ -1473,7 +1719,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "妙管家八倍濃縮洗衣球",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "317.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2328",
@@ -1485,7 +1733,9 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "7-ELEVEN現金抵用券35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "49.55",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2329",
@@ -1497,7 +1747,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "3C配件收納包(紀念品數量如有不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "54.90",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2331",
@@ -1509,7 +1761,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.55",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2332",
@@ -1521,7 +1775,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "常健順暢益生菌",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.85",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2337",
@@ -1533,7 +1789,9 @@
     "condition": "電子投票截圖和身分證件正本(成年限身分證正本(未滿14歲可用健保卡)) 成年限身分證正本(未滿14歲可用健保卡)",
     "mops_status": "發放",
     "mops_item": "50元統一超商商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "154.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2338",
@@ -1545,7 +1803,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "Mini不銹鋼真空保溫杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.00",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2340",
@@ -1557,7 +1817,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "50元超商商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "38.05",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2342",
@@ -1569,7 +1831,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "清潔用品",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "33.60",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2344",
@@ -1581,7 +1845,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照) 身分證、健保卡或駕照",
     "mops_status": "發放",
     "mops_item": "FDK三號鹼性電池一組(4入)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "89.80",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2345",
@@ -1593,7 +1859,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "2280.00",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2349",
@@ -1605,7 +1873,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "洗衣機槽清潔錠",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.45",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "2352",
@@ -1617,7 +1887,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "史努比陶瓷雙碗組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "23.90",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2353",
@@ -1629,7 +1901,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "27.60",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2354",
@@ -1641,7 +1915,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "51.80",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2355",
@@ -1653,7 +1929,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "陽離子布證件包",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "51.20",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2359",
@@ -1665,7 +1943,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "蜂王拾光漫遊經典皂二入",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "119.00",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "2363",
@@ -1677,7 +1957,9 @@
     "condition": "寄單(開會通知書)和電子投票截圖和身分證件正本(要補單及限身分證正本(未滿14歲為戶口名簿正本)) 不開放委託,限身分證正本新竹領取,又要寄單",
     "mops_status": "發放",
     "mops_item": "工具組或歷年",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.00",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2364",
@@ -1689,7 +1971,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "便利商店50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "63.00",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2365",
@@ -1701,7 +1985,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "頭戴式耳機",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "35.90",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2367",
@@ -1713,7 +1999,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "感應小夜燈",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "57.70",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "2369",
@@ -1725,7 +2013,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "29.55",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2371",
@@ -1737,7 +2027,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "Luminarc純白強化餐具2件套",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.20",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2374",
@@ -1749,7 +2041,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "稻循皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "78.40",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2375",
@@ -1761,7 +2055,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "妙管家煥彩香氛洗衣球",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "85.00",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2376",
@@ -1773,7 +2069,9 @@
     "condition": "電子投票截圖或身分證件圖片",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "273.00",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "2379",
@@ -1785,7 +2083,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店88元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "537.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2380",
@@ -1797,7 +2097,9 @@
     "condition": "電子投票截圖(全家面額50元)",
     "mops_status": "發放",
     "mops_item": "沙威隆潔淨抗菌組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "5.62",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2390",
@@ -1809,7 +2111,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "9.78",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2393",
@@ -1821,7 +2125,9 @@
     "condition": "電子投票截圖或身分證件圖片",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "71.10",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "2399",
@@ -1833,7 +2139,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證或健保卡)",
     "mops_status": "發放",
     "mops_item": "南僑水晶馬卡龍植萃皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "42.45",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2401",
@@ -1845,7 +2153,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "24.10",
+    "last_buy": "2026/04/14 (二)"
   },
   {
     "stock_id": "2402",
@@ -1857,7 +2167,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商咖啡卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "70.20",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "2404",
@@ -1869,7 +2181,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "950.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2405",
@@ -1881,7 +2195,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "康寧Amber 9吋湯盤(不足時以等值商品代替)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.95",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "2406",
@@ -1893,7 +2209,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.55",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2409",
@@ -1905,7 +2223,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "台灣產製真空包裝白米600公克",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "17.20",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2417",
@@ -1917,7 +2237,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "不鏽鋼保溫杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.15",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2420",
@@ -1929,7 +2251,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "伊莎貝爾櫻花香皂二入",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "54.70",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2421",
@@ -1941,7 +2265,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "麗晶麝香抗菌洗手露320g",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "145.00",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2425",
@@ -1953,7 +2279,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.30",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "2426",
@@ -1965,7 +2293,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "57.30",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2429",
@@ -1977,7 +2307,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "雲彩霓虹無人機冷光水晶掛飾",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.10",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "2430",
@@ -1989,7 +2321,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.95",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2431",
@@ -2001,7 +2335,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "醫用口罩",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.80",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2436",
@@ -2013,7 +2349,9 @@
     "condition": "電子投票截圖 不開放委託,新竹領取,紀念品價值不高",
     "mops_status": "發放",
     "mops_item": "香皂禮盒(二入)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "72.70",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2438",
@@ -2025,7 +2363,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "高級文青隨行杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "22.50",
+    "last_buy": "2026/04/07 (二)"
   },
   {
     "stock_id": "2439",
@@ -2037,7 +2377,9 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "全家35元咖啡卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "86.00",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2442",
@@ -2049,7 +2391,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "毛寶洗衣精500ml",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.25",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2444",
@@ -2061,7 +2405,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "防疫消毒酒精瓶",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.35",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2449",
@@ -2073,7 +2419,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照) 身分證、健保卡或駕照",
     "mops_status": "發放",
     "mops_item": "鋼珠筆組(紀念品數量若有不足",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "302.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2453",
@@ -2085,7 +2433,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "折疊手提袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "53.50",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2455",
@@ -2097,7 +2447,9 @@
     "condition": "不開放委託,egift有期限,自行領取",
     "mops_status": "發放",
     "mops_item": "商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "347.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2457",
@@ -2109,7 +2461,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "23.95",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2458",
@@ -2121,7 +2475,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "136.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2460",
@@ -2133,7 +2489,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "編織快充線(不足時以等值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "35.80",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "2461",
@@ -2145,7 +2503,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "陶瓷碗組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.85",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2464",
@@ -2157,7 +2517,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "義美提領券50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "113.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2465",
@@ -2169,7 +2531,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "深海原萃極效修護面膜(一入)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "74.00",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "2467",
@@ -2181,7 +2545,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "磁吸可掛式開瓶器露營燈(USB充電)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "609.00",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2471",
@@ -2193,7 +2559,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "毛寶洗碗精",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.60",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "2478",
@@ -2205,7 +2573,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "68.40",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2480",
@@ -2217,7 +2587,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "143.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2481",
@@ -2229,7 +2601,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "蜂王 拾光漫遊經典皂二入盒",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "101.00",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2482",
@@ -2241,7 +2615,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "沙威隆經典抗菌皂二入",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.85",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2484",
@@ -2253,7 +2629,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "麵條",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "39.55",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "2485",
@@ -2265,7 +2643,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "58.70",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2486",
@@ -2277,7 +2657,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11咖啡卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "270.50",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2488",
@@ -2289,7 +2671,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "51.80",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "2489",
@@ -2301,7 +2685,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "真空壓縮收納袋組(附抽氣沯)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "42.10",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2493",
@@ -2313,7 +2699,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "保溫保冷袋(紀念品數量如有不足",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "123.00",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2495",
@@ -2325,7 +2713,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "7-11商品卡 35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "40.20",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2498",
@@ -2337,7 +2727,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "HTC三角肩背包乙個",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "40.15",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2504",
@@ -2349,7 +2741,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "35.25",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2506",
@@ -2361,7 +2755,9 @@
     "condition": "電子投票截圖和身分證件正本 身分證、健保卡或駕照正本",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "8.89",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "2515",
@@ -2373,7 +2769,9 @@
     "condition": "電子投票截圖和身分證件正本 身分證、健保卡或駕照正本",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.05",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2516",
@@ -2385,7 +2783,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "休閒側背包",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.65",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2520",
@@ -2397,7 +2797,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "環球購物中心禮券100元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "29.45",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2534",
@@ -2409,7 +2811,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "白米",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.05",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2535",
@@ -2421,7 +2825,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "BLACK HAMMER耐熱玻璃法式濾壓壺",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "72.10",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "2537",
@@ -2433,7 +2839,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "妙管家洗衣球",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.20",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "2538",
@@ -2445,7 +2853,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "9.76",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "2546",
@@ -2457,7 +2867,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "環球購物中心禮券100元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "84.50",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2547",
@@ -2469,7 +2881,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.35",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "2601",
@@ -2481,7 +2895,9 @@
     "condition": "寄單(開會通知書)和身分證件正本(身分證、健保卡或駕照。請洽凱基補單02-23892999)",
     "mops_status": "發放",
     "mops_item": "妙管家雪花點點杯(藍雲朵)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "5.01",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2603",
@@ -2493,7 +2909,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "德國雙人全鋼刨刀",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "202.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2605",
@@ -2505,7 +2923,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "琉璃沙拉碗",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "34.70",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2607",
@@ -2517,7 +2937,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.45",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2608",
@@ -2529,7 +2951,9 @@
     "condition": "電子投票截圖和身分證件正本 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.25",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2609",
@@ -2541,7 +2965,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "49.15",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2611",
@@ -2553,7 +2979,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照正本) 身分證、健保卡或駕照正本",
     "mops_status": "發放",
     "mops_item": "7-11商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.30",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "2612",
@@ -2565,7 +2993,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "54.10",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2613",
@@ -2577,7 +3007,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "22.40",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2614",
@@ -2589,7 +3021,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "森美妍白茶賦活保濕素顏霜",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.20",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "2616",
@@ -2601,7 +3035,9 @@
     "condition": "寄單(開會通知書)(請在第二聯左下角領取紀念品處簽名或蓋章請在第二聯左下角領取紀念品處簽名或蓋章)",
     "mops_status": "發放",
     "mops_item": "春風抽取式衛生紙一串",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.20",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2618",
@@ -2613,7 +3049,9 @@
     "condition": "身分證件正本 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "33.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2636",
@@ -2625,7 +3063,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "台灣茶摳滋養沐浴皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "67.10",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "2704",
@@ -2637,7 +3077,9 @@
     "condition": "電子投票截圖或身分證件圖片",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "41.70",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "2705",
@@ -2649,7 +3091,9 @@
     "condition": "電子投票截圖(效期 26/06/08 (一)~06/12 (五)) 效期 26/06/08 (一)~06/12 (五)",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.65",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2727",
@@ -2661,7 +3105,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "王品",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "226.50",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2731",
@@ -2673,7 +3119,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "國內外團體旅遊兌換券700元(國內團體200元及國外團體500元)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "159.00",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "2801",
@@ -2685,7 +3133,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "7-11商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.15",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2812",
@@ -2697,7 +3147,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "洗碗精",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.85",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2820",
@@ -2709,7 +3161,9 @@
     "condition": "電子投票截圖或身分證件圖片",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.80",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2832",
@@ -2721,7 +3175,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.30",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2834",
@@ -2733,7 +3189,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11商品卡(面額新臺幣50元)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.35",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2880",
@@ -2745,7 +3203,9 @@
     "condition": "寄單(開會通知書)(請於6/8前寄達本站信箱)",
     "mops_status": "發放",
     "mops_item": "咖波聯名限定雙盤組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "32.05",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "2883",
@@ -2757,7 +3217,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "彩繪花鳥筷(6雙)組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.50",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2885",
@@ -2769,7 +3231,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "即享卡100元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.20",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2887",
@@ -2781,7 +3245,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "多用途矽膠隔熱餐墊(二入)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "23.80",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2889",
@@ -2793,7 +3259,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "高級法蘭絨毯(品項如有不足時得以同值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "2890",
@@ -2805,7 +3273,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "永豐幸福毯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.95",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "2891",
@@ -2817,7 +3287,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "琉璃工房–牡丹花開碗盤組(2套組)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.30",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2911",
@@ -2829,7 +3301,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "嬰兒柔護濕巾20抽/單包",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "5.10",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "2913",
@@ -2841,7 +3315,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "日月紅茶2",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.25",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "2929",
@@ -2853,7 +3329,9 @@
     "condition": "電子投票截圖 6",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "5.57",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "3004",
@@ -2865,7 +3343,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "116.50",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "3006",
@@ -2877,7 +3357,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "鋼珠對筆",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "169.50",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "3010",
@@ -2889,7 +3371,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家禮物卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "132.50",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "3011",
@@ -2901,7 +3385,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 5",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.05",
+    "last_buy": "2026/04/29 (三)"
   },
   {
     "stock_id": "3013",
@@ -2913,7 +3399,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "三角斜背保溫保冷袋 ( 紀念品數量如有不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "104.50",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "3014",
@@ -2925,7 +3413,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "香皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "124.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3017",
@@ -2937,7 +3427,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "2835.00",
+    "last_buy": "2026/04/01 (三)"
   },
   {
     "stock_id": "3018",
@@ -2949,7 +3441,9 @@
     "condition": "電子投票截圖和身分證件正本 身分證、健保卡或駕照正本",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.70",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3019",
@@ -2961,7 +3455,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "越光米200g",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "138.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3023",
@@ -2973,7 +3469,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "玻璃杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "283.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3024",
@@ -2985,7 +3483,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "Lynx真空掀蓋隨行杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.70",
+    "last_buy": "2026/03/11 (三)"
   },
   {
     "stock_id": "3025",
@@ -2997,7 +3497,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品券50元(紀念品如有不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "60.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3026",
@@ -3009,7 +3511,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "擦手巾(紀念品數量如有不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "212.50",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "3027",
@@ -3021,7 +3525,9 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "統一超商現金抵用券35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.60",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "3028",
@@ -3033,7 +3539,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "隨行玻璃胖胖瓶",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "68.30",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "3029",
@@ -3045,7 +3553,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡50元或以約當等值商品代替",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "102.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3032",
@@ -3057,7 +3567,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "64.00",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3033",
@@ -3069,7 +3581,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "威健帆布提袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "35.75",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "3034",
@@ -3081,7 +3595,9 @@
     "condition": "電子投票截圖 不開放委託,egift有期限,自行領取",
     "mops_status": "發放",
     "mops_item": "超商商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "409.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3035",
@@ -3093,7 +3609,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "便利商店商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "168.00",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "3036",
@@ -3105,7 +3623,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證、健保卡或駕照正本) 限身分證、健保卡或駕照正本",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "204.00",
+    "last_buy": "2026/03/12 (四)"
   },
   {
     "stock_id": "3037",
@@ -3117,7 +3637,9 @@
     "condition": "電子投票截圖和身分證件圖片",
     "mops_status": "發放",
     "mops_item": "OK超商100元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "883.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3038",
@@ -3129,7 +3651,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "證件包",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "22.90",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "3041",
@@ -3141,7 +3665,9 @@
     "condition": "電子投票截圖 7",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "23.50",
+    "last_buy": "2026/04/29 (三)"
   },
   {
     "stock_id": "3042",
@@ -3153,7 +3679,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿正本)) 限身分證正本(未滿14歲為戶口名簿正本)",
     "mops_status": "發放",
     "mops_item": "超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "153.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3043",
@@ -3165,7 +3693,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.50",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3047",
@@ -3177,7 +3707,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "清新植萃精華皂二入盒",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.65",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "3048",
@@ -3189,7 +3721,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "38.15",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "3049",
@@ -3201,7 +3735,9 @@
     "condition": "電子投票截圖",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.20",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "3050",
@@ -3213,7 +3749,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "洗衣機槽清洗錠",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.25",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "3051",
@@ -3225,7 +3763,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "台灣製ESG公益砧板",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.35",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3052",
@@ -3237,7 +3777,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "五合一工具組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.65",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "3056",
@@ -3249,7 +3791,9 @@
     "condition": "身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.90",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "3057",
@@ -3261,7 +3805,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "摺疊餐具組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.15",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "3058",
@@ -3273,7 +3819,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "手機支架",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "8.58",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "3059",
@@ -3285,7 +3833,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本)",
     "mops_status": "發放",
     "mops_item": "環保可拆手把不鏽鋼迷你牛奶深鍋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "40.30",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "3060",
@@ -3297,7 +3847,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店50元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.05",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "3062",
@@ -3309,7 +3861,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "玻璃皮套兩用瓶",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "24.90",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3090",
@@ -3321,7 +3875,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "無患子潔手慕斯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "96.30",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "3092",
@@ -3333,7 +3889,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "訊號線(不足時以等值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "32.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3094",
@@ -3345,7 +3903,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "便利貼",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "26.20",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3138",
@@ -3357,7 +3917,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "日式陶瓷斗笠碗",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "152.00",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3149",
@@ -3369,7 +3931,9 @@
     "condition": "寄單(開會通知書)和身分證件正本(新竹且須身分證正本) 不開放委託,新竹領取,紀念品價值不高當天有其他地方需要身分證件正本",
     "mops_status": "發放",
     "mops_item": "香皂組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.30",
+    "last_buy": "2026/03/31 (二)"
   },
   {
     "stock_id": "3209",
@@ -3381,7 +3945,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "迷你夜行LED燈",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.20",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "3229",
@@ -3393,7 +3959,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "40.05",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3305",
@@ -3405,7 +3973,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "108.50",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "3311",
@@ -3417,7 +3987,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "FDK三號鹼性電池一組(4入)(紀念品不足時得以等值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.65",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3312",
@@ -3429,7 +4001,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "洗手乳",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "40.80",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "3321",
@@ -3439,9 +4013,12 @@
     "sg_status": "發放",
     "sg_item": "35元超商卡",
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照正本)",
-    "mops_status": "發放",
-    "mops_item": "35元超商卡",
-    "update_date": "2026/05/03"
+    "mops_status": "⚠️ 異常",
+    "mops_item": "多次查無按鈕，請手動 Debug",
+    "update_date": "2026/05/03",
+    "price": "16.00",
+    "last_buy": "2026/04/23 (四)",
+    "needs_debug": true
   },
   {
     "stock_id": "3321",
@@ -3451,9 +4028,12 @@
     "sg_status": "發放",
     "sg_item": "50元超商卡",
     "condition": "電子投票截圖和身分證件正本(僅限 身分證) 僅限 身分證",
-    "mops_status": "發放",
-    "mops_item": "50元超商卡",
-    "update_date": "2026/05/03"
+    "mops_status": "",
+    "mops_item": "",
+    "update_date": "2026/05/03",
+    "price": "16.00",
+    "last_buy": "2026/01/08 (四)",
+    "needs_debug": false
   },
   {
     "stock_id": "3338",
@@ -3465,7 +4045,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店禮物卡新台幣伍拾元整",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "74.20",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "3346",
@@ -3477,7 +4059,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "MEDIMIX綠寶石皇室藥草浴美肌皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "17.15",
+    "last_buy": "2026/04/21 (二)"
   },
   {
     "stock_id": "3356",
@@ -3489,7 +4073,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11美式咖啡卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "54.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3376",
@@ -3501,7 +4087,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "調料罐",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "204.00",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "3406",
@@ -3513,7 +4101,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "7-11商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "509.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3413",
@@ -3525,7 +4115,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "309.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3419",
@@ -3537,7 +4129,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "單顆香皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "15.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3437",
@@ -3549,7 +4143,9 @@
     "condition": "身分證件正本(領取地點在新竹且須身分證正本)",
     "mops_status": "發放",
     "mops_item": "不鏽鋼玻璃調料罐",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "26.55",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3450",
@@ -3561,7 +4157,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "印花樂山中健行琥珀茶色耐熱玻璃保鮮盒",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "302.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3481",
@@ -3573,7 +4171,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "時尚輕巧隨手杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "23.95",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3494",
@@ -3585,7 +4185,9 @@
     "condition": "身分證件正本 身分證、健保卡或駕照",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "7.75",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3518",
@@ -3597,7 +4199,9 @@
     "condition": "電子投票截圖和身分證件正本(領取地在桃園)",
     "mops_status": "發放",
     "mops_item": "咖啡杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "32.80",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "3530",
@@ -3609,7 +4213,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "64.60",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "3535",
@@ -3621,7 +4227,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "玻璃兩用杯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "128.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3543",
@@ -3633,7 +4241,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "指甲剪套裝組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "41.20",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "3545",
@@ -3645,7 +4255,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "50.10",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "3550",
@@ -3657,7 +4269,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.30",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "3557",
@@ -3669,7 +4283,9 @@
     "condition": "電子投票截圖或身分證件圖片",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.35",
+    "last_buy": "2026/03/18 (三)"
   },
   {
     "stock_id": "3563",
@@ -3681,7 +4297,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "873.00",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "3576",
@@ -3693,7 +4311,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "35元7-11商品券",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "16.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3588",
@@ -3705,7 +4325,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "便利商店提貨卡(美式咖啡)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "61.20",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3591",
@@ -3717,7 +4339,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商20元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "23.35",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3592",
@@ -3729,7 +4353,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商商品卡(面額新台幣伍拾元整)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "235.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3593",
@@ -3741,7 +4367,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.85",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "3605",
@@ -3753,7 +4381,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "香皂(紀念品數量如有不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "87.10",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "3607",
@@ -3765,7 +4395,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商咖啡提領卡(35元)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.55",
+    "last_buy": "2026/04/14 (二)"
   },
   {
     "stock_id": "3645",
@@ -3777,7 +4409,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店伍拾元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "104.00",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3669",
@@ -3789,7 +4423,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "39.20",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "3673",
@@ -3801,7 +4437,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家禮物卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "60.40",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3686",
@@ -3813,7 +4451,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "17.20",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "3702",
@@ -3825,7 +4465,9 @@
     "condition": "電子投票截圖 4",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "101.00",
+    "last_buy": "2026/04/29 (三)"
   },
   {
     "stock_id": "3704",
@@ -3837,7 +4479,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "34.95",
+    "last_buy": "2026/04/14 (二)"
   },
   {
     "stock_id": "3706",
@@ -3849,7 +4493,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "嘉禾牌家常麵無添加麵條",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "81.40",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3708",
@@ -3861,7 +4507,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡(新台幣35元)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "116.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "3711",
@@ -3873,7 +4521,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "儲物罐(屆時若數量不足將以等值禮品替代之)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "478.00",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "3714",
@@ -3885,7 +4535,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "Ennostar x 懶散兔&啾先生聯名不鏽鋼餐具組(或等值商品替代之)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "74.10",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "3715",
@@ -3895,9 +4547,12 @@
     "sg_status": "發放",
     "sg_item": "香皂一入",
     "condition": "電子投票截圖",
-    "mops_status": "發放",
-    "mops_item": "香皂一入",
-    "update_date": "2026/05/03"
+    "mops_status": "⚠️ 異常",
+    "mops_item": "多次查無按鈕，請手動 Debug",
+    "update_date": "2026/05/03",
+    "price": "174.00",
+    "last_buy": "2026/04/23 (四)",
+    "needs_debug": true
   },
   {
     "stock_id": "3715",
@@ -3907,9 +4562,12 @@
     "sg_status": "發放",
     "sg_item": "香皂二入",
     "condition": "電子投票截圖",
-    "mops_status": "發放",
-    "mops_item": "香皂二入",
-    "update_date": "2026/05/03"
+    "mops_status": "",
+    "mops_item": "",
+    "update_date": "2026/05/03",
+    "price": "174.00",
+    "last_buy": "2026/02/05 (四)",
+    "needs_debug": false
   },
   {
     "stock_id": "3716",
@@ -3921,7 +4579,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "綠的抗菌潔手慕斯",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "31.70",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "3717",
@@ -3933,7 +4593,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "櫻花碗二入",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "4104",
@@ -3945,7 +4607,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照)",
     "mops_status": "發放",
     "mops_item": "面膜",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "71.40",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4108",
@@ -3957,7 +4621,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿正本))",
     "mops_status": "發放",
     "mops_item": "清潔品",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.25",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "4119",
@@ -3969,7 +4635,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.80",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "4133",
@@ -3981,7 +4649,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.60",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "4142",
@@ -3993,7 +4663,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "氣密保鮮罐(不足時將以等值商品替代)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "17.70",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "4155",
@@ -4005,7 +4677,9 @@
     "condition": "電子投票截圖 不開放委託,新竹領取代領費都能直接買了,當天有其他地方需要身分證正本與六福處理",
     "mops_status": "發放",
     "mops_item": "五月花輕柔抽取式衛生紙",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.00",
+    "last_buy": "2026/04/01 (三)"
   },
   {
     "stock_id": "4306",
@@ -4017,7 +4691,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "環保購物袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.20",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "4414",
@@ -4029,7 +4705,9 @@
     "condition": "",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "10.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4526",
@@ -4041,7 +4719,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "36.75",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "4540",
@@ -4053,7 +4733,9 @@
     "condition": "電子投票截圖 1",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "68.50",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "4545",
@@ -4065,7 +4747,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "全家便利商店50元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.20",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4552",
@@ -4077,7 +4761,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "多功能削皮器",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.00",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4557",
@@ -4089,7 +4775,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "精緻包裝米",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "49.95",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "4564",
@@ -4101,7 +4789,9 @@
     "condition": "電子投票截圖(領取地在雲林)",
     "mops_status": "發放",
     "mops_item": "洗碗精(紀念品數量不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.20",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "4566",
@@ -4113,7 +4803,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "折疊休閒帽",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "67.20",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "4590",
@@ -4125,7 +4817,9 @@
     "condition": "苗栗領取;條件不明故不開放委託",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "74.30",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4737",
@@ -4137,7 +4831,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "62.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4739",
@@ -4149,7 +4845,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商35元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "84.80",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "4746",
@@ -4161,7 +4859,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元提貨卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "54.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4807",
@@ -4173,7 +4873,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "20.75",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "4906",
@@ -4185,7 +4887,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "指甲剪套裝組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "34.30",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "4912",
@@ -4197,7 +4901,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "Savlon沙威隆經典抗菌香皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "81.70",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "4916",
@@ -4209,7 +4915,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "61.60",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "4927",
@@ -4221,7 +4929,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "針織手提袋(紀念品若有不足",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.20",
+    "last_buy": "2026/02/26 (四)"
   },
   {
     "stock_id": "4930",
@@ -4233,7 +4943,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.20",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "4934",
@@ -4245,7 +4957,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商商品卡新台幣35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "15.90",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "4943",
@@ -4257,7 +4971,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "9.55",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4956",
@@ -4269,7 +4985,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "不鏽鋼玻璃調料罐",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.25",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "4960",
@@ -4281,7 +4999,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商100元商品卡(或以等值商品替代之)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "39.00",
+    "last_buy": "2026/04/29 (三)"
   },
   {
     "stock_id": "4961",
@@ -4293,7 +5013,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "152.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "4967",
@@ -4305,7 +5027,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店禮物卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "281.00",
+    "last_buy": "2026/03/12 (四)"
   },
   {
     "stock_id": "4968",
@@ -4317,7 +5041,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店50元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "116.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "4976",
@@ -4329,7 +5055,9 @@
     "condition": "身分證件正本(領取地點在台中)",
     "mops_status": "發放",
     "mops_item": "統一超商45元咖啡卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "29.00",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4977",
@@ -4341,7 +5069,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家35元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "217.50",
+    "last_buy": "2026/04/07 (二)"
   },
   {
     "stock_id": "4999",
@@ -4353,7 +5083,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商咖啡兌換券",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.70",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "5203",
@@ -4365,7 +5097,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "CITY CAFE/現萃茶實體提貨卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "65.40",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "5222",
@@ -4377,7 +5111,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照)",
     "mops_status": "發放",
     "mops_item": "超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "131.50",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "5243",
@@ -4389,7 +5125,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "硅藻土杯墊",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "105.50",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "5258",
@@ -4401,7 +5139,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "乖乖純水濕巾",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.65",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "5283",
@@ -4413,7 +5153,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "環保隨身保溫杯(紀念品數量如有不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "52.50",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "5471",
@@ -4425,7 +5167,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店禮物卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "42.00",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "5484",
@@ -4437,7 +5181,9 @@
     "condition": "電子投票截圖",
     "mops_status": "無資料",
     "mops_item": "查無紀念品段落",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "39.00",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "5521",
@@ -4449,7 +5195,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "Savlon沙威隆經典抗菌香皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.35",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "5608",
@@ -4461,7 +5209,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店企業禮贈卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "15.20",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "5706",
@@ -4473,7 +5223,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "鳳凰旅遊證件收納袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "50.90",
+    "last_buy": "2026/03/31 (二)"
   },
   {
     "stock_id": "5880",
@@ -4485,7 +5237,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "便利超商禮物卡或等值紀念品",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "22.95",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6005",
@@ -4497,7 +5251,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.05",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6108",
@@ -4509,7 +5265,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.10",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6116",
@@ -4521,7 +5279,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "8.14",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "6120",
@@ -4533,7 +5293,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.80",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6136",
@@ -4545,7 +5307,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "手工香皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "25.40",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "6141",
@@ -4557,7 +5321,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "32.50",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "6142",
@@ -4569,7 +5335,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "神守精華膠囊",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "8.85",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6152",
@@ -4581,7 +5349,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "手機支架",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.50",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "6153",
@@ -4593,7 +5363,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "FDK三號鹼性電池一組(4入)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "17.95",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "6164",
@@ -4605,7 +5377,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "妙管家洗潔精",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.30",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "6165",
@@ -4617,7 +5391,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商禮券35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "53.10",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6183",
@@ -4629,7 +5405,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "7-11商品卡100元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "92.20",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "6189",
@@ -4641,7 +5419,9 @@
     "condition": "電子投票截圖和身分證件正本(僅限身分證或健保卡) 僅限身分證或健保卡",
     "mops_status": "發放",
     "mops_item": "50元超商禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.95",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6191",
@@ -4653,7 +5433,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "FDK三號鹼性電池1組(4入)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "98.40",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6197",
@@ -4665,7 +5447,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "208.00",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "6202",
@@ -4677,7 +5461,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "統一商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "54.20",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "6209",
@@ -4689,7 +5475,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本)",
     "mops_status": "發放",
     "mops_item": "台灣茶摳柔嫩細緻肌燕麥皂二入",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "62.30",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6214",
@@ -4701,7 +5489,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "摺疊環保購物袋",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "120.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6215",
@@ -4713,7 +5503,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "111.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6216",
@@ -4725,7 +5517,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "輕薄辦公室便利貼",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "24.30",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "6224",
@@ -4737,7 +5531,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "無資料",
     "mops_item": "查無紀念品段落",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "73.30",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "6226",
@@ -4749,7 +5545,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照正本)",
     "mops_status": "發放",
     "mops_item": "蜂王草本皂80g",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.55",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "6235",
@@ -4761,7 +5559,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "有機白米",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "43.20",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "6239",
@@ -4773,7 +5573,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "203.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6243",
@@ -4785,7 +5587,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "33.55",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "6257",
@@ -4797,7 +5601,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11商品卡-面額50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "180.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6269",
@@ -4809,7 +5615,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "毛寶好無比超淨亮防蟎抗菌洗衣精500g",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "65.80",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6271",
@@ -4821,7 +5629,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "妙管家八倍濃縮洗衣球",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "173.00",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "6282",
@@ -4833,7 +5643,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "鋅合金編織充電線",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "47.35",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6416",
@@ -4845,7 +5657,9 @@
     "condition": "電子投票截圖和身分證件正本(僅限身分證或健保卡) 僅限身分證或健保卡",
     "mops_status": "發放",
     "mops_item": "統一超商咖啡提貨卡(紀念品數量不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "81.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6426",
@@ -4857,7 +5671,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證或健保卡)",
     "mops_status": "發放",
     "mops_item": "三合一數據線",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "223.50",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "6431",
@@ -4867,9 +5683,12 @@
     "sg_status": "待公布",
     "sg_item": "無",
     "condition": "",
-    "mops_status": "不發放",
-    "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "mops_status": "⚠️ 異常",
+    "mops_item": "多次查無按鈕，請手動 Debug",
+    "update_date": "2026/05/03",
+    "price": "19.50",
+    "last_buy": "2026/04/09 (四)",
+    "needs_debug": true
   },
   {
     "stock_id": "6431",
@@ -4879,9 +5698,12 @@
     "sg_status": "待公布",
     "sg_item": "無",
     "condition": "",
-    "mops_status": "不發放",
-    "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "mops_status": "",
+    "mops_item": "",
+    "update_date": "2026/05/03",
+    "price": "19.50",
+    "last_buy": "2025/12/25 (四)",
+    "needs_debug": false
   },
   {
     "stock_id": "6438",
@@ -4893,7 +5715,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店50元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "176.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6442",
@@ -4905,7 +5729,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "2110.00",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "6443",
@@ -4917,7 +5743,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "35.35",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "6446",
@@ -4929,7 +5757,9 @@
     "condition": "電子投票截圖或身分證件圖片",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "661.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6449",
@@ -4941,7 +5771,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "161.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6477",
@@ -4953,7 +5785,9 @@
     "condition": "(限身分證、健保卡;台南領取,因其他地方也需要證件正本,故不開放委託) 不開放委託,台南領取,紀念品價值不高當天有其他地方需要身分證件正本",
     "mops_status": "發放",
     "mops_item": "植萃精華皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "33.40",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "6531",
@@ -4965,7 +5799,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "840.00",
+    "last_buy": "2026/03/05 (四)"
   },
   {
     "stock_id": "6533",
@@ -4977,7 +5813,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家商品禮券50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "228.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6558",
@@ -4989,7 +5827,9 @@
     "condition": "電子投票截圖 不開放委託,新竹領取,紀念品價值不高當天有其他地方需要身分證件正本",
     "mops_status": "發放",
     "mops_item": "香皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "28.85",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "6591",
@@ -5001,7 +5841,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店-禮物卡 ( 面額新台幣伍拾元整)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "57.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6598",
@@ -5013,7 +5855,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "21.45",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "6645",
@@ -5025,7 +5869,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.90",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "6657",
@@ -5037,7 +5883,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "沙威隆經典抗菌皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "42.05",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "6658",
@@ -5049,7 +5897,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "鋅合金編織充電線",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "149.50",
+    "last_buy": "2026/03/12 (四)"
   },
   {
     "stock_id": "6672",
@@ -5061,7 +5911,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "面額台幣50元全家便利商店禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "219.00",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6695",
@@ -5073,7 +5925,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家便利商店35元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "46.50",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "6698",
@@ -5085,7 +5939,9 @@
     "condition": "電子投票截圖(領取地點在台南)",
     "mops_status": "發放",
     "mops_item": "全家便利商店35元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "30.85",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6706",
@@ -5097,7 +5953,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "151.50",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "6719",
@@ -5109,7 +5967,9 @@
     "condition": "電子投票截圖或身分證件圖片",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "170.00",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "6742",
@@ -5121,7 +5981,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家50元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "39.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "6757",
@@ -5133,7 +5995,9 @@
     "condition": "不開放委託,自行至台灣虎航官方網站投資人專區活動網頁領取",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "49.65",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "6770",
@@ -5145,7 +6009,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商100元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "51.90",
+    "last_buy": "2026/02/05 (四)"
   },
   {
     "stock_id": "6799",
@@ -5157,7 +6023,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "88.00",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "6885",
@@ -5169,7 +6037,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "22.95",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "6902",
@@ -5181,7 +6051,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "102.50",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "6909",
@@ -5193,7 +6065,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "環保小麥便攜餐具套裝",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "61.60",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "7705",
@@ -5205,7 +6079,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "「三商 i 美食 APP」各品牌 50 元電子抵用券共 12 張",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "32.90",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "7722",
@@ -5217,7 +6093,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "281.50",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "7769",
@@ -5229,7 +6107,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "4945.00",
+    "last_buy": "2026/04/14 (二)"
   },
   {
     "stock_id": "7780",
@@ -5241,7 +6121,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "大研生醫",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.50",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "8011",
@@ -5253,7 +6135,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "野餐墊",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "19.35",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "8016",
@@ -5265,7 +6149,9 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "全家便利商店35元禮物卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "230.00",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "8021",
@@ -5277,7 +6163,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "公益沐浴球",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "402.50",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "8028",
@@ -5289,7 +6177,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "原木隔熱桌墊",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "245.00",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "8033",
@@ -5301,7 +6191,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿)) 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "發放",
     "mops_item": "抗菌洗手露",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "144.00",
+    "last_buy": "2026/03/12 (四)"
   },
   {
     "stock_id": "8039",
@@ -5313,7 +6205,9 @@
     "condition": "電子投票截圖和身分證件正本(egift實體有期限,限身分證或健保卡) egift實體有期限,限身分證或健保卡",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡面額35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "136.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "8101",
@@ -5325,7 +6219,9 @@
     "condition": "電子投票截圖和身分證件正本 限身分證正本(未滿14歲為戶口名簿)",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.40",
+    "last_buy": "2026/03/12 (四)"
   },
   {
     "stock_id": "8103",
@@ -5337,7 +6233,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "茶山房洗手串組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "125.00",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "8104",
@@ -5349,7 +6247,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "洗衣機槽清洗錠",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "33.25",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "8105",
@@ -5361,7 +6261,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "13.30",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "8110",
@@ -5373,7 +6275,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "超商35元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "44.85",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "8112",
@@ -5385,7 +6289,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "無患子抗菌清潔組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "81.70",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "8150",
@@ -5397,7 +6303,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "50元7-11商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "69.80",
+    "last_buy": "2026/03/25 (三)"
   },
   {
     "stock_id": "8163",
@@ -5409,7 +6317,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "保冰袋(紀念品數量不足時",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "26.65",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "8213",
@@ -5421,7 +6331,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商禮券50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "36.25",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "8215",
@@ -5433,7 +6345,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "護妍天使 光透水潤雙星保養限定組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "25.85",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "8222",
@@ -5445,7 +6359,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "濾掛式咖啡包2入",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "35.10",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "8249",
@@ -5457,7 +6373,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證或健保卡正本) 限身分證或健保卡正本",
     "mops_status": "發放",
     "mops_item": "旅行收納袋2件組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "49.45",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "8261",
@@ -5469,7 +6387,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "妙管家煥彩香氛洗衣球",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "118.50",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "8271",
@@ -5481,7 +6401,9 @@
     "condition": "電子投票截圖和身分證件正本(egift實體有期限,身分證、健保卡或駕照正本) egift實體有期限,身分證、健保卡或駕照正本",
     "mops_status": "發放",
     "mops_item": "全家50元禮贈卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "220.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "8422",
@@ -5493,7 +6415,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "27.75",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "8429",
@@ -5505,7 +6429,9 @@
     "condition": "電子投票截圖和身分證件正本(限身分證正本(未滿14歲為戶口名簿))",
     "mops_status": "發放",
     "mops_item": "超商咖啡提領卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "6.58",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "8443",
@@ -5517,7 +6443,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "感恩購物金500元現金抵用券",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "11.85",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "8487",
@@ -5529,7 +6457,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "愛爾達 x FIFA世界盃™ 專屬紀念品",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "77.10",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "8996",
@@ -5541,7 +6471,9 @@
     "condition": "電子投票截圖(egift實體) egift實體",
     "mops_status": "發放",
     "mops_item": "7-ELEVEN商品卡面額50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "1250.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "9902",
@@ -5553,7 +6485,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "香皂",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.65",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "9912",
@@ -5565,7 +6499,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "便利商店禮物卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "12.75",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "9914",
@@ -5577,7 +6513,9 @@
     "condition": "電子投票截圖(面額不明以35元計算)",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "57.90",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "9917",
@@ -5589,7 +6527,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商或全家超商100元商品卡(擇一)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "113.00",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "9918",
@@ -5601,7 +6541,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "43.25",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "9919",
@@ -5613,7 +6555,9 @@
     "condition": "電子投票截圖(醫療用品依法不得上架商城)",
     "mops_status": "發放",
     "mops_item": "口罩",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "14.25",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "9935",
@@ -5625,7 +6569,9 @@
     "condition": "電子投票截圖((面額50)) (面額50)",
     "mops_status": "發放",
     "mops_item": "全家商品券",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "18.25",
+    "last_buy": "2026/03/19 (四)"
   },
   {
     "stock_id": "9937",
@@ -5637,7 +6583,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "56.40",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "9938",
@@ -5649,7 +6597,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "竹炭襪2雙",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "44.15",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "9958",
@@ -5661,7 +6611,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "青花瓷手柄不銹鋼餐具組",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "101.00",
+    "last_buy": "2026/03/24 (二)"
   },
   {
     "stock_id": "1565",
@@ -10305,7 +11257,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "4150",
@@ -10317,7 +11271,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家50元禮券卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "4172",
@@ -10329,7 +11285,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "洗衣精600g",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/03/26 (四)"
   },
   {
     "stock_id": "4195",
@@ -10339,9 +11297,12 @@
     "sg_status": "發放",
     "sg_item": "醫護醫療用貼布",
     "condition": "電子投票截圖",
-    "mops_status": "發放",
-    "mops_item": "醫護醫療用貼布",
-    "update_date": "2026/05/03"
+    "mops_status": "⚠️ 異常",
+    "mops_item": "多次查無按鈕，請手動 Debug",
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/23 (四)",
+    "needs_debug": true
   },
   {
     "stock_id": "4195",
@@ -10351,9 +11312,12 @@
     "sg_status": "發放",
     "sg_item": "小包平安米",
     "condition": "電子投票截圖",
-    "mops_status": "發放",
-    "mops_item": "小包平安米",
-    "update_date": "2026/05/03"
+    "mops_status": "",
+    "mops_item": "",
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/03/16 (一)",
+    "needs_debug": false
   },
   {
     "stock_id": "5262",
@@ -10365,7 +11329,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "5271",
@@ -10377,7 +11343,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "全家禮物卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "5297",
@@ -10389,7 +11357,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "伊莎貝爾歐風精華皂三入",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "5863",
@@ -10401,7 +11371,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "保溫保冷袋乙個或其他等值紀念品",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "6473",
@@ -10413,7 +11385,9 @@
     "condition": "(自行領取)",
     "mops_status": "發放",
     "mops_item": "美賣商城 85 折優惠券 10 張",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "6483",
@@ -10425,7 +11399,9 @@
     "condition": "電子投票截圖",
     "mops_status": "無資料",
     "mops_item": "查無紀念品段落",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "6543",
@@ -10437,7 +11413,9 @@
     "condition": "彰化領取,需證件正本不開放委託",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/03/05 (四)"
   },
   {
     "stock_id": "6549",
@@ -10449,7 +11427,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "ESG永續公益刨刀",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/15 (三)"
   },
   {
     "stock_id": "6586",
@@ -10461,7 +11441,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "6595",
@@ -10473,7 +11455,9 @@
     "condition": "電子投票截圖 僅限股東本人持身分證使用",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "6618",
@@ -10485,7 +11469,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商五十元面額商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "6621",
@@ -10497,7 +11483,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/03/17 (二)"
   },
   {
     "stock_id": "6648",
@@ -10509,7 +11497,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "6696",
@@ -10521,7 +11511,9 @@
     "condition": "",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/29 (三)"
   },
   {
     "stock_id": "6786",
@@ -10533,7 +11525,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "石墨烯能量護腕",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6787",
@@ -10545,7 +11539,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "對摺式收納運動帽",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/08 (三)"
   },
   {
     "stock_id": "6793",
@@ -10557,7 +11553,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "6797",
@@ -10569,7 +11567,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "7-11 咖啡卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "6798",
@@ -10581,7 +11581,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/22 (三)"
   },
   {
     "stock_id": "6810",
@@ -10593,7 +11595,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商咖啡提領卡 (35元)",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "6815",
@@ -10605,7 +11609,9 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "6876",
@@ -10617,7 +11623,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "6886",
@@ -10629,7 +11637,9 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "7516",
@@ -10641,7 +11651,9 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "清淨海MIIFLORA香水洗髮精720g",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/09 (四)"
   },
   {
     "stock_id": "7566",
@@ -10653,7 +11665,9 @@
     "condition": "電子投票截圖 台南領取",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/16 (四)"
   },
   {
     "stock_id": "7689",
@@ -10665,7 +11679,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "多功能收納包",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/02 (四)"
   },
   {
     "stock_id": "7719",
@@ -10677,7 +11693,9 @@
     "condition": "電子投票截圖和身分證件正本(身分證、健保卡或駕照正本)",
     "mops_status": "發放",
     "mops_item": "統一超商商品卡50元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "7729",
@@ -10689,7 +11707,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "統一超商50元商品卡",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/28 (二)"
   },
   {
     "stock_id": "7895",
@@ -10699,9 +11719,12 @@
     "sg_status": "發放",
     "sg_item": "滴雞精2入",
     "condition": "",
-    "mops_status": "發放",
-    "mops_item": "滴雞精2入",
-    "update_date": "2026/05/03"
+    "mops_status": "⚠️ 異常",
+    "mops_item": "多次查無按鈕，請手動 Debug",
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/21 (二)",
+    "needs_debug": true
   },
   {
     "stock_id": "7895",
@@ -10711,9 +11734,12 @@
     "sg_status": "待公布",
     "sg_item": "無",
     "condition": "",
-    "mops_status": "不發放",
-    "mops_item": "不發放",
-    "update_date": "2026/05/03"
+    "mops_status": "",
+    "mops_item": "",
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/02/16 (一)",
+    "needs_debug": false
   },
   {
     "stock_id": "7907",
@@ -10725,7 +11751,9 @@
     "condition": "",
     "mops_status": "發放",
     "mops_item": "商品禮券",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/23 (四)"
   },
   {
     "stock_id": "8119",
@@ -10737,6 +11765,8 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "超商商品卡35元",
-    "update_date": "2026/05/03"
+    "update_date": "2026/05/03",
+    "price": "",
+    "last_buy": "2026/04/02 (四)"
   }
 ]
