@@ -13,16 +13,17 @@ from collections import deque
 # =========================================================
 # 系統設定
 # =========================================================
-# 根據你的要求，檔案位置可以增加 data/
+# 檔案儲存路徑設定 (存放在 data/ 資料夾下，方便 GitHub Pages 讀取)
 DB_HISTORY_FILE = 'data/db_history.json'    
 DB_PAGE1_FILE = 'data/db_page1.json'        
 STATE_FILE = 'data/state_mops_dates.json'   
 MAX_RETRIES = 3
+FAIL_THRESHOLD = 3 
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 
 # =========================================================
-# 模組 1：股價與最後買進日演算法 (含台灣假日系統)
+# 模組 1：股價與最後買進日演算法 (含台灣假日系統與 SSL 繞過)
 # =========================================================
 
 def fetch_taiwan_holidays():
@@ -30,15 +31,13 @@ def fetch_taiwan_holidays():
     print("\n[Init] 📅 正在獲取台灣政府行政機關日曆表...")
     holidays = set()
     try:
-        # 建立略過 SSL 驗證的環境
+        # 建立略過 SSL 驗證的環境，避免憑證錯誤
         ctx = ssl.create_default_context()
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
 
         url = "https://data.ntpc.gov.tw/api/datasets/308DCD75-6434-45BC-A950-5BEF4ADC36EA/json?page=0&size=1000"
         req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-        
-        # 加上 context=ctx
         with urllib.request.urlopen(req, timeout=10, context=ctx) as response:
             data = json.loads(response.read().decode())
             for item in data:
@@ -53,11 +52,10 @@ def fetch_taiwan_holidays():
     return holidays
 
 def fetch_twse_prices():
-    """從證交所 OpenAPI 獲取最新收盤價快取字典"""
+    """從證交所與櫃買中心 OpenAPI 獲取最新收盤價快取字典"""
     print("[Init] 📈 正在從證交所獲取最新收盤價...")
     price_dict = {}
     try:
-        # 建立略過 SSL 驗證的環境
         ctx = ssl.create_default_context()
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
@@ -65,30 +63,30 @@ def fetch_twse_prices():
         # 抓取上市股價
         url_twse = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
         req = urllib.request.Request(url_twse, headers={'User-Agent': USER_AGENT})
-        with urllib.request.urlopen(req, timeout=10, context=ctx) as response: # 加上 context=ctx
+        with urllib.request.urlopen(req, timeout=10, context=ctx) as response:
             data = json.loads(response.read().decode())
             for item in data: price_dict[item['Code']] = item['ClosingPrice']
                 
         # 抓取上櫃股價
         url_otc = "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_quotes"
         req_otc = urllib.request.Request(url_otc, headers={'User-Agent': USER_AGENT})
-        with urllib.request.urlopen(req_otc, timeout=10, context=ctx) as response: # 加上 context=ctx
+        with urllib.request.urlopen(req_otc, timeout=10, context=ctx) as response:
             data_otc = json.loads(response.read().decode())
             for item in data_otc: price_dict[item['SecuritiesCompanyCode']] = item['Close']
                 
         print(f"   ✅ 成功獲取上市櫃股價，共 {len(price_dict)} 檔")
-    except Exception as e: 
-        print(f"   ⚠️ 股價獲取失敗: {e}")
+    except Exception as e: print(f"   ⚠️ 股價獲取失敗: {e}")
     return price_dict
 
 def calculate_last_buy_date(meeting_date_str, meeting_type, holidays_set):
-    """精準推算最後買進日，排除台灣假日，並輸出 (星期X)"""
+    """精準推算最後買進日，排除台灣假日，並輸出包含星期的格式 (例如: 2026/04/23 (四))"""
     if not meeting_date_str: return ""
     try:
         parts = meeting_date_str.split('/')
         roc_year, month, day = int(parts[0]), int(parts[1]), int(parts[2])
         meeting_date = datetime(roc_year + 1911, month, day)
         
+        # 法規：常會前60日停止過戶，臨時會前30日
         stop_days = 60 if "常會" in meeting_type else 30
         stop_start_date = meeting_date - timedelta(days=stop_days - 1)
         last_transfer_date = stop_start_date - timedelta(days=1)
@@ -96,9 +94,11 @@ def calculate_last_buy_date(meeting_date_str, meeting_type, holidays_set):
         working_days_to_subtract = 2
         last_buy = last_transfer_date
         
+        # 迴圈往前推算，避開週末與國定假日
         while working_days_to_subtract > 0:
             last_buy -= timedelta(days=1)
             date_str_key = last_buy.strftime("%Y%m%d")
+            # 5:週六, 6:週日
             if last_buy.weekday() >= 5 or date_str_key in holidays_set: continue
             working_days_to_subtract -= 1
                 
@@ -107,7 +107,7 @@ def calculate_last_buy_date(meeting_date_str, meeting_type, holidays_set):
     except: return ""
 
 # =========================================================
-# 工具函式
+# 模組 2：字串分析與儲存工具
 # =========================================================
 
 def analyze_souvenir_status(body_text: str):
@@ -153,10 +153,11 @@ def get_mops_query_years():
     return queries
 
 # =========================================================
-# 爬蟲階段
+# 爬蟲階段：Step 1, Step 2, Step 3
 # =========================================================
 
 async def get_sg_data(page: Page):
+    """獲取零股寶聯集基準資料 (主要抓取發放條件)"""
     print("\n[Step 1] 🚀 獲取零股寶聯集基準資料...")
     sg_data = {}
     try:
@@ -204,10 +205,13 @@ async def get_sg_data(page: Page):
     return sg_data
 
 async def check_mops_summary(page: Page, state_dates: dict, db_page1: list, sg_data: dict, db_history: list, twse_prices: dict, holidays_set: set):
-    print("\n[Step 2] 🕵️ 巡邏 MOPS 總表...")
+    """巡邏 MOPS 總表，更新股價與買進日，並挑出需要詳細爬取的清單"""
+    print("\n[Step 2] 🕵️ 巡邏 MOPS 總表並更新股價/日期...")
     needs = []
     for sid, val in state_dates.items():
         if isinstance(val, str): state_dates[sid] = {"time": val, "pending": False}
+    
+    db_page1_updated = False 
     
     await page.goto("https://mopsov.twse.com.tw/mops/web/t108sb31_q1", timeout=60000)
     for q in get_mops_query_years():
@@ -235,7 +239,7 @@ async def check_mops_summary(page: Page, state_dates: dict, db_page1: list, sg_d
                     sg_item = sg_info.get('item', '無')
                     sg_status = infer_sg_status(sg_item)
                     
-                    # 💡 計算最新股價與買進日
+                    # 計算最新股價與買進日
                     calculated_last_buy = calculate_last_buy_date(m_date, m_type, holidays_set)
                     current_price = twse_prices.get(sid, '')
                     
@@ -247,26 +251,35 @@ async def check_mops_summary(page: Page, state_dates: dict, db_page1: list, sg_d
                             'mops_status': '', 'mops_item': '', 'update_date': '',
                             'price': current_price, 'last_buy': calculated_last_buy, 'needs_debug': False
                         })
-                        p1_idx = len(db_page1) - 1
+                        db_page1_updated = True
                     else:
+                        # 強制更新該檔股票的股價與日期
                         db_page1[p1_idx].update({
                             'stock_name': name, 'meeting_date': m_date, 'sg_status': sg_status, 'sg_item': sg_item, 
                             'condition': sg_info.get('condition', ''), 'price': current_price, 'last_buy': calculated_last_buy
                         })
+                        db_page1_updated = True
                     
-                    current_state = state_dates.get(sid, {"time": "", "pending": False})
+                    state_key = f"{sid}_{m_type}"
+                    current_state = state_dates.get(state_key, {"time": "", "pending": False})
+                    
                     if full_time != current_state.get("time") or current_state.get("pending") is True:
-                        state_dates[sid] = {"time": full_time, "pending": True}
+                        state_dates[state_key] = {"time": full_time, "pending": True}
                         db_page1[p1_idx].update({'mops_status': '', 'mops_item': '', 'needs_debug': False})
-                        needs.append((sid, m_type))
+                        needs.append((sid, m_type, state_key))
             except: pass
-    save_all_data(db_history, db_page1, state_dates)
+            
+    if db_page1_updated or needs:
+        save_all_data(db_history, db_page1, state_dates)
+        
     print(f"   ✅ 過濾與標記完成，共有 {len(needs)} 檔異動需進入詳細比對。")
     return needs, db_page1
 
-async def fetch_st3_detail(sid, m_type, page, db_h, db_p1, states, shared_state):
+async def fetch_st3_detail(sid, m_type, state_key, page, db_h, db_p1, states, shared_state):
+    """深入爬取 MOPS 彈出視窗內的詳細紀念品資訊"""
     await asyncio.sleep(random.uniform(0.5, 1.25) + shared_state["consecutive_bans"] * 4.0)
-    if "fail_count" not in states[sid]: states[sid]["fail_count"] = 0
+    if state_key not in states: states[state_key] = {"time": "", "pending": True, "fail_count": 0}
+    if "fail_count" not in states[state_key]: states[state_key]["fail_count"] = 0
 
     try:
         await page.goto("https://mopsov.twse.com.tw/mops/web/t108sb16_q1", wait_until="domcontentloaded", timeout=0)
@@ -297,12 +310,12 @@ async def fetch_st3_detail(sid, m_type, page, db_h, db_p1, states, shared_state)
                     if await btn.count() > 0: year_rows.append((date_text.strip(), btn))
 
         if not year_rows:
-            states[sid]["fail_count"] += 1
-            if states[sid]["fail_count"] >= 3:
+            states[state_key]["fail_count"] += 1
+            if states[state_key]["fail_count"] >= FAIL_THRESHOLD:
                 for p in db_p1:
                     if p['stock_id'] == sid and p['meeting_type'] == m_type:
                         p.update({'mops_status': "⚠️ 異常", 'mops_item': "多次查無按鈕，請手動 Debug", 'update_date': datetime.now().strftime("%Y/%m/%d"), 'needs_debug': True})
-            states[sid]["pending"] = False
+            states[state_key]["pending"] = False
             save_all_data(db_h, db_p1, states)
             shared_state["consecutive_bans"] = 0
             return "RETRY_LATER"
@@ -340,7 +353,9 @@ async def fetch_st3_detail(sid, m_type, page, db_h, db_p1, states, shared_state)
                     elif first_s != latest_s: rec['status'] = f"{'待公布' if first_s in ['無資料', '無資訊'] else first_s} -> {latest_s}"
                     else: rec['status'] = latest_s
                     rec['item'] = latest_i
-        states[sid].update({"pending": False, "fail_count": 0})
+                    print(f"   🎯 [{sid}] 更新成功: {rec['status']} - {latest_i}")
+
+        states[state_key].update({"pending": False, "fail_count": 0})
         save_all_data(db_h, db_p1, states)
         shared_state["consecutive_bans"] = 0
         return "SUCCESS"
@@ -349,7 +364,7 @@ async def fetch_st3_detail(sid, m_type, page, db_h, db_p1, states, shared_state)
     except Exception: return "ERROR"
 
 # =========================================================
-# 執行程序
+# 主程序執行入口
 # =========================================================
 
 async def main():
@@ -369,9 +384,11 @@ async def main():
         browser = await p.chromium.launch(headless=True) 
         context = await browser.new_context(user_agent=USER_AGENT)
         page = await context.new_page()
+        
+        # 爬取零股寶
         sg_data = await get_sg_data(page)
         
-        # 🔥 3. 傳入假日集合與股價
+        # 🔥 3. 傳入假日集合與股價進行比對，並強制更新股價與買進日
         needs, db_p1 = await check_mops_summary(page, states, db_p1, sg_data, db_h, twse_prices, taiwan_holidays)
         
         if needs:
@@ -379,13 +396,13 @@ async def main():
             queue = deque(needs)
             retried_sids = set() 
             while queue:
-                sid, m_type = queue.popleft()
+                sid, m_type, state_key = queue.popleft()
                 success_flag = False
                 for retry in range(MAX_RETRIES):
                     try:
-                        result = await fetch_st3_detail(sid, m_type, page, db_h, db_p1, states, shared_state)
+                        result = await fetch_st3_detail(sid, m_type, state_key, page, db_h, db_p1, states, shared_state)
                         if result == "RETRY_LATER":
-                            if sid not in retried_sids: queue.append((sid, m_type)); retried_sids.add(sid)
+                            if state_key not in retried_sids: queue.append((sid, m_type, state_key)); retried_sids.add(state_key)
                             success_flag = True; break
                         elif result == "SUCCESS": success_flag = True; break
                         elif result == "ERROR": break
