@@ -12,7 +12,7 @@
             border-radius: 8px; padding: 12px 16px; z-index: 9999;
             pointer-events: none; transition: opacity 0.15s;
             box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5); border: 1px solid #334155;
-            font-size: 13px; line-height: 1.6; max-width: 260px;
+            font-size: 13px; line-height: 1.6; max-width: 280px;
         }
         .bg-strict { background-color: #fca5a5 !important; }
         .bg-gift { background-color: #bbf7d0 !important; }
@@ -40,7 +40,6 @@
             border-left: 4px solid transparent; border-right: 4px solid transparent;
             border-top: 5px solid #cbd5e1;
         }
-        /* 🌟 修正：只有在特定排序方向時才顯示藍色 */
         .active-sort.sort-asc .tri-up { border-bottom-color: #3b82f6; }
         .active-sort.sort-desc .tri-down { border-top-color: #3b82f6; }
     </style>
@@ -48,16 +47,16 @@
 <body class="bg-slate-50 min-h-screen text-slate-800">
 
 <nav class="bg-indigo-800 text-white shadow-md sticky top-0 z-30">
-    <div class="max-w-[98%] mx-auto px-4">
-        <div class="flex items-center justify-between h-14">
-            <div class="flex items-center space-x-6">
-                <span class="text-xl font-bold tracking-widest">股東會紀念品情報</span>
+    <div class="max-w-[98%] mx-auto px-4 py-2">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+            <div class="flex w-full md:w-auto items-center justify-between md:justify-start space-x-4">
+                <span class="text-lg md:text-xl font-bold tracking-widest whitespace-nowrap">股東會紀念品情報</span>
                 <div class="flex space-x-2">
-                    <button onclick="switchTab('current')" id="tab-current" class="px-4 py-1.5 rounded-md text-sm font-bold bg-indigo-900 shadow-inner ring-1 ring-indigo-400">當下會議</button>
-                    <button onclick="switchTab('history')" id="tab-history" class="px-4 py-1.5 rounded-md text-sm font-medium hover:bg-indigo-600 transition">歷史資料</button>
+                    <button onclick="switchTab('current')" id="tab-current" class="px-4 py-1.5 rounded-md text-sm font-bold bg-indigo-900 shadow-inner ring-1 ring-indigo-400 whitespace-nowrap">當下會議</button>
+                    <button onclick="switchTab('history')" id="tab-history" class="px-4 py-1.5 rounded-md text-sm font-medium hover:bg-indigo-600 transition whitespace-nowrap">歷史資料</button>
                 </div>
             </div>
-            <div class="flex-1 max-w-xs ml-4">
+            <div class="w-full md:flex-1 md:max-w-xs">
                 <input type="text" id="searchInput" oninput="renderData()" placeholder="🔍 輸入代號或名稱..." class="w-full px-3 py-1.5 bg-indigo-900 border border-indigo-600 text-white placeholder-indigo-300 rounded focus:outline-none focus:ring-2 focus:ring-white text-sm">
             </div>
         </div>
@@ -67,33 +66,33 @@
 <main class="max-w-[98%] mx-auto py-6">
     <div id="page-current" class="block">
         <div class="overflow-x-auto bg-white rounded-lg shadow border border-slate-200 max-h-[80vh]">
-            <table class="min-w-full divide-y divide-slate-200 text-sm">
+            <table class="min-w-max md:min-w-full divide-y divide-slate-200 text-sm">
                 <thead class="bg-slate-100 text-slate-700 font-bold">
                     <tr>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>標籤說明</b><br><span class='text-green-600'>零</span>：僅零股寶有資料<br><span class='text-red-600'>公</span>：僅MOPS有正式公告">
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('stock_id')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>標籤說明</b><br><span class='text-green-600'>零</span>：僅零股寶有資料<br><span class='text-red-600'>公</span>：僅MOPS有正式公告">
                             代號 <div class="sort-container" id="icon-stock_id"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap">名稱</th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('price')">
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('price')">
                             股價 <div class="sort-container" id="icon-price"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('last_buy')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>顏色說明</b><br><span class='bg-red-200 text-slate-800 px-1'>淺紅底</span>：缺少買進日資料<br><span class='text-red-500 font-bold'>紅字粗體</span>：已過最後買進日">
                             最後買進日 <div class="sort-container" id="icon-last_buy"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left w-1/5" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>底色說明</b><br><span class='bg-red-300 text-slate-800 px-1'>紅底</span>：領取條件嚴格<br><span class='bg-green-200 text-slate-800 px-1'>綠底</span>：超商禮券類">紀念品</th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('ir')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年發放率</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：≤ 40%<br><span class='text-red-700 font-bold'>深紅字</span>：≤ 60%">
-                            發放率 <div class="sort-container" id="icon-ir"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>底色說明</b><br><span class='bg-red-300 text-slate-800 px-1'>紅底</span>：領取條件嚴格<br><span class='bg-green-200 text-slate-800 px-1'>綠底</span>：超商禮券類<br><br><b>文字說明</b><br>若出現「A / B」，代表 零股寶(A) 與 MOPS(B) 公告之物品不一致">紀念品</th>
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('ir')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年發放率</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：≤ 40%<br><span class='text-red-700 font-bold'>深紅字</span>：≤ 60%">
+                            近5年發放率 <div class="sort-container" id="icon-ir"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('hr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年蓋牌率</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：= 100%<br><span class='text-red-700 font-bold'>深紅字</span>：≥ 60%">
-                            蓋牌率 <div class="sort-container" id="icon-hr"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('hr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年蓋牌率</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：= 100%<br><span class='text-red-700 font-bold'>深紅字</span>：≥ 60%">
+                            近5年蓋牌率 <div class="sort-container" id="icon-hr"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年翻盤率</b><br><span class='text-green-600 font-bold'>綠字粗體</span>：曾有翻盤紀錄">
-                            翻盤率 <div class="sort-container" id="icon-fr"><div class="tri-up"></div><div class="tri-down"></div></div>
+                        <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('fr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年翻盤率</b><br><span class='text-green-600 font-bold'>綠字粗體</span>：曾有不發放轉發放紀錄">
+                            近5年翻盤率 <div class="sort-container" id="icon-fr"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('update_date')">
                             更新日期 <div class="sort-container" id="icon-update_date"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left w-1/5">領取條件</th>
+                        <th class="sticky-header px-3 py-3 text-left min-w-[200px]">領取條件</th>
                         <th class="sticky-header px-3 py-3 text-center whitespace-nowrap sortable" onclick="setSort('meeting_type')">
                             性質 <div class="sort-container" id="icon-meeting_type"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
@@ -106,24 +105,24 @@
 
     <div id="page-history" class="hidden">
         <div class="overflow-x-auto bg-white rounded-lg shadow border border-slate-200 max-h-[80vh]">
-            <table class="min-w-full divide-y divide-slate-200 text-sm">
+            <table class="min-w-max md:min-w-full divide-y divide-slate-200 text-sm">
                 <thead class="bg-slate-100 text-slate-700 font-bold">
                     <tr>
-                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('stock_id')">
+                        <th class="sticky-header px-4 py-3 text-left whitespace-nowrap sortable" onclick="setSort('stock_id')">
                             代號 <div class="sort-container" id="icon-stock_id-hist"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-4 py-3 text-left">名稱</th>
-                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('ir')">
+                        <th class="sticky-header px-4 py-3 text-left whitespace-nowrap">名稱</th>
+                        <th class="sticky-header px-4 py-3 text-left whitespace-nowrap sortable" onclick="setSort('ir')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年發放率</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：≤ 40%<br><span class='text-red-700 font-bold'>深紅字</span>：≤ 60%">
                             近5年發放率 <div class="sort-container" id="icon-ir-hist"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('hr')">
+                        <th class="sticky-header px-4 py-3 text-left whitespace-nowrap sortable" onclick="setSort('hr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年蓋牌率</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：= 100%<br><span class='text-red-700 font-bold'>深紅字</span>：≥ 60%">
                             近5年蓋牌率 <div class="sort-container" id="icon-hr-hist"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-4 py-3 text-left sortable" onclick="setSort('fr')">
+                        <th class="sticky-header px-4 py-3 text-left whitespace-nowrap sortable" onclick="setSort('fr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年翻盤率</b><br><span class='text-green-600 font-bold'>綠字粗體</span>：曾有不發放轉發放紀錄">
                             近5年翻盤率 <div class="sort-container" id="icon-fr-hist"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-4 py-3 text-left w-1/3">預設條件</th>
-                        <th class="sticky-header px-4 py-3 text-left">去年紀念品</th>
+                        <th class="sticky-header px-4 py-3 text-left min-w-[200px]">預設條件</th>
+                        <th class="sticky-header px-4 py-3 text-left whitespace-nowrap">去年紀念品</th>
                     </tr>
                 </thead>
                 <tbody id="body-history" class="divide-y divide-slate-100"></tbody>
@@ -181,12 +180,14 @@
     function calculateStats(histDict) {
         let logs = [];
         let issues = 0, hides = 0, flips = 0;
-        for (let i = 1; i <= 5; i++) {
+        
+        for (let i = 1; i <= 10; i++) {
             const y = thisYear - i;
             const rec = histDict[y.toString()];
             const s = rec?.status || "";
             logs.push(`(${y}) ${rec?.item || "未公告"}`);
-            if (rec) {
+            
+            if (i <= 5 && rec) {
                 if (s.includes("發放")) issues++;
                 if (s.includes("待公布 -> 發放") || s.includes("待公布->發放")) hides++;
                 if (s.includes("不發放 -> 發放") || s.includes("無資料 -> 發放")) flips++;
@@ -228,7 +229,6 @@
             switch(s.key) {
                 case 'stock_id': valA = a.stock_id; valB = b.stock_id; break;
                 case 'price': 
-                    // 🌟 修復：確保價格字串轉數字時過濾掉可能存在的逗號
                     valA = parseFloat(String(a.price || '0').replace(/,/g, '')) || 0;
                     valB = parseFloat(String(b.price || '0').replace(/,/g, '')) || 0;
                     break;
@@ -248,7 +248,6 @@
     function renderData() {
         const q = document.getElementById('searchInput').value.toLowerCase();
         
-        // 🌟 修正：重置所有排序標頭的樣式
         document.querySelectorAll('.sortable').forEach(el => {
             el.classList.remove('active-sort', 'sort-asc', 'sort-desc');
         });
@@ -257,7 +256,6 @@
         let suffix = currentTab === 'history' ? '-hist' : '';
         let iconEl = document.getElementById(`icon-${s.key}${suffix}`);
         
-        // 🌟 修正：根據目前排序狀態加入對應的 class
         if (iconEl) {
             let th = iconEl.parentElement;
             th.classList.add('active-sort');
@@ -272,21 +270,29 @@
                 let tag = "";
                 const hasSg = item.sg_item && item.sg_item !== "無" && item.sg_item !== "";
                 const hasMops = item.mops_status === "發放" || item.mops_status === "不發放";
-                if (hasSg && !hasMops) tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5">零</span>`;
-                else if (!hasSg && hasMops) tag = `<span class="text-red-600 font-bold text-[10px] align-top ml-0.5">公</span>`;
+                if (hasSg && !hasMops) tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5" title="僅零股寶有資料">零</span>`;
+                else if (!hasSg && hasMops) tag = `<span class="text-red-600 font-bold text-[10px] align-top ml-0.5" title="僅MOPS有公告">公</span>`;
 
-                let buyClass = "";
-                if (!item.last_buy) buyClass = "bg-danger";
+                let buyClass = "whitespace-nowrap";
+                if (!item.last_buy) buyClass += " bg-danger";
                 else {
                     const cleanDate = item.last_buy.split(' ')[0];
-                    if (cleanDate < todayStr) buyClass = "text-expired";
+                    if (cleanDate < todayStr) buyClass += " text-expired";
                 }
 
+                // 🌟 核心更新：資料衝突時顯示「零股寶 / MOPS」
                 let displayItem = "待公布";
-                if (hasMops) displayItem = item.mops_item;
-                else if (hasSg) displayItem = item.sg_item;
+                if (hasMops && hasSg && item.mops_item !== item.sg_item) {
+                    displayItem = `${item.sg_item} / ${item.mops_item}`;
+                } else if (hasMops) {
+                    displayItem = item.mops_item;
+                } else if (hasSg) {
+                    displayItem = item.sg_item;
+                }
+
                 if (item.needs_debug === 1) displayItem = `<span class="text-red-600 font-bold underline">查無詳細按鈕</span>`;
 
+                // 顏色判定 Regex 依然完美相容「A / B」字串格式
                 const isStrict = /身分|身份|證件|正本|不開放|委託/.test(condText);
                 const isGift = /7-11|統一|全家|超商|商品卡|禮券|商品券/.test(displayItem);
                 let souvenirBg = isStrict ? "bg-strict" : (isGift ? "bg-gift" : "");
@@ -297,16 +303,16 @@
 
                 return `
                 <tr class="hover:bg-slate-50 transition border-b">
-                    <td class="px-3 py-2 font-mono text-slate-700">${item.stock_id}${tag}</td>
+                    <td class="px-3 py-2 font-mono text-slate-700 whitespace-nowrap">${item.stock_id}${tag}</td>
                     <td class="px-3 py-2 font-bold text-slate-900 whitespace-nowrap">${item.stock_name}</td>
-                    <td class="px-3 py-2 text-slate-600">${item.price || '-'}</td>
-                    <td class="px-3 py-2 ${buyClass} whitespace-nowrap">${item.last_buy || ''}</td>
-                    <td class="px-3 py-2 ${souvenirBg} font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br>${item.stats.logHTML}'>
+                    <td class="px-3 py-2 text-slate-600 whitespace-nowrap">${item.price || '-'}</td>
+                    <td class="px-3 py-2 ${buyClass}">${item.last_buy || ''}</td>
+                    <td class="px-3 py-2 ${souvenirBg} font-medium text-slate-800 cursor-help whitespace-nowrap" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br><span class="text-xs text-gray-300">【近10年紀錄】</span><br>${item.stats.logHTML}'>
                         ${displayItem}
                     </td>
-                    <td class="px-3 py-2">${colorRate(item.stats.irRaw, item.stats.irStr, 'issue')}</td>
-                    <td class="px-3 py-2">${colorRate(item.stats.hrRaw, item.stats.hrStr, 'hide')}</td>
-                    <td class="px-3 py-2">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
+                    <td class="px-3 py-2 whitespace-nowrap">${colorRate(item.stats.irRaw, item.stats.irStr, 'issue')}</td>
+                    <td class="px-3 py-2 whitespace-nowrap">${colorRate(item.stats.hrRaw, item.stats.hrStr, 'hide')}</td>
+                    <td class="px-3 py-2 whitespace-nowrap">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
                     <td class="px-3 py-2 text-slate-900 text-xs whitespace-nowrap">${item.update_date || ''}</td>
                     <td class="px-3 py-2 text-xs text-slate-600 truncate max-w-[200px]" title="${condText}">${condText}</td>
                     <td class="px-3 py-2 text-center whitespace-nowrap">${meetTypeBadge}</td>
@@ -317,14 +323,14 @@
             data = sortData(data);
             document.getElementById('body-history').innerHTML = data.map(item => {
                 return `
-                <tr class="hover:bg-slate-50 transition border-b">
-                    <td class="px-4 py-3 font-mono text-slate-700">${item.stock_id}</td>
+                <tr class="hover:bg-slate-50 transition border-b cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br><span class="text-xs text-gray-300">【近10年紀錄】</span><br>${item.stats.logHTML}'>
+                    <td class="px-4 py-3 font-mono text-slate-700 whitespace-nowrap">${item.stock_id}</td>
                     <td class="px-4 py-3 font-bold text-slate-900 whitespace-nowrap">${item.stock_name}</td>
-                    <td class="px-4 py-3">${colorRate(item.stats.irRaw, item.stats.irStr, 'issue')}</td>
-                    <td class="px-4 py-3">${colorRate(item.stats.hrRaw, item.stats.hrStr, 'hide')}</td>
-                    <td class="px-4 py-3">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
-                    <td class="px-4 py-3 text-xs text-slate-700">${item.condition}</td>
-                    <td class="px-4 py-3 font-medium text-slate-800 cursor-help" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip='<span class="text-blue-300 font-bold">(${item.stock_id})${item.stock_name}</span><br>${item.stats.logHTML}'>
+                    <td class="px-4 py-3 whitespace-nowrap">${colorRate(item.stats.irRaw, item.stats.irStr, 'issue')}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">${colorRate(item.stats.hrRaw, item.stats.hrStr, 'hide')}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">${colorRate(item.stats.frRaw, item.stats.frStr, 'flip')}</td>
+                    <td class="px-4 py-3 text-xs text-slate-700 truncate max-w-[200px]" title="${item.condition}">${item.condition}</td>
+                    <td class="px-4 py-3 font-medium text-slate-800 whitespace-nowrap">
                         ${item.history?.[(thisYear - 1).toString()]?.item || '-'}
                     </td>
                 </tr>`;
@@ -336,8 +342,8 @@
         currentTab = tab;
         const actBtn = tab === 'current' ? 'tab-current' : 'tab-history';
         const inactBtn = tab === 'current' ? 'tab-history' : 'tab-current';
-        document.getElementById(actBtn).className = "px-4 py-1.5 rounded-md text-sm font-bold bg-indigo-900 shadow-inner ring-1 ring-indigo-400";
-        document.getElementById(inactBtn).className = "px-4 py-1.5 rounded-md text-sm font-medium hover:bg-indigo-600 transition";
+        document.getElementById(actBtn).className = "px-4 py-1.5 rounded-md text-sm font-bold bg-indigo-900 shadow-inner ring-1 ring-indigo-400 whitespace-nowrap";
+        document.getElementById(inactBtn).className = "px-4 py-1.5 rounded-md text-sm font-medium hover:bg-indigo-600 transition whitespace-nowrap";
         document.getElementById('page-current').className = tab === 'current' ? 'block' : 'hidden';
         document.getElementById('page-history').className = tab === 'history' ? 'block' : 'hidden';
         renderData();
