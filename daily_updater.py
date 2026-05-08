@@ -50,7 +50,7 @@ async def fetch_twse_prices(session):
     price_dict = {}
     try:
         async with session.get("https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL", headers={'User-Agent': USER_AGENT}, ssl=False) as resp:
-            for item in json.loads(await resp.text()): price_dict[item['Code']] = item['ClosingPrice']
+            for item in json.loads(await resp.text()): price_dict[item['Code']] = item['ClosingPrice'].replace(',', '')
         async with session.get("https://www.tpex.org.tw/openapi/v1/tpex_mainboard_quotes", headers={'User-Agent': USER_AGENT}, ssl=False) as resp:
             for item in json.loads(await resp.text()): price_dict[item['SecuritiesCompanyCode']] = item['Close']
         print(f"   ✅ 成功獲取股價，共 {len(price_dict)} 檔")
@@ -201,21 +201,36 @@ async def get_sg_data_async(session):
     return sg_data
 
 # =========================================================
-# Step 2：巡邏 MOPS 總表 (聯集擴充版)
+# Step 2：巡邏 MOPS 總表 (聯集擴充 + 任務去重版)
 # =========================================================
 async def check_mops_summary_async(session, conn, sg_data, history_sids, twse_prices, holidays_set):
     print("\n[Step 2] 🕵️ 巡邏 MOPS 總表...")
-    needs = []
+    
+    # 🌟 使用字典存儲任務，key 為 state_key，確保同一個會議不會被重複排程
+    needs_dict = {} 
+    
     cursor = conn.cursor()
     url = "https://mopsov.twse.com.tw/mops/web/ajax_t108sb31"
     referer = "https://mopsov.twse.com.tw/mops/web/t108sb31_q1"
     
     for q in get_mops_query_years():
         for mk in ['sii', 'otc', 'rotc', 'pub']:
+            import random
+            import asyncio
             await asyncio.sleep(random.uniform(1.0, 2.0))
-            payload = {"encodeURIComponent": "1", "step": "1", "firstin": "true", "TYPEK": mk, "YEAR": str(q["year"]), "MONTH": q["month"]}
+            
+            payload = {
+                "encodeURIComponent": "1", 
+                "step": "1", 
+                "firstin": "true", 
+                "TYPEK": mk, 
+                "YEAR": str(q["year"]), 
+                "MONTH": q["month"]
+            }
+            
             try:
                 html = await fetch_html(session, url, method="POST", payload=payload, referer=referer)
+                from bs4 import BeautifulSoup
                 soup = BeautifulSoup(html, 'html.parser')
                 rows = soup.select("table.hasBorder tr")
                 print(f"   🔎 查詢 {q['year']}年 / {mk}市場 -> 取得 {max(0, len(rows)-1)} 筆公告")
@@ -223,18 +238,22 @@ async def check_mops_summary_async(session, conn, sg_data, history_sids, twse_pr
                 for tr in rows:
                     tds = tr.find_all('td')
                     if len(tds) < 20: continue 
-                    sid, name, m_date = tds[0].text.strip(), tds[1].text.strip(), tds[4].text.strip()
+                    
+                    sid = tds[0].text.strip()
+                    name = tds[1].text.strip()
+                    m_date = tds[4].text.strip()
                     m_type = "常會" if "常會" in tds[3].text else "臨時會"
                     full_time = f"{tds[18].text.strip()} {tds[19].text.strip()}" 
                     
-                    # 🌟 核心修正： info ∪ suggest ∪ historydb
-                    # 只要不存在於零股寶，也不存在於歷史資料庫，才跳過
+                    # 🌟 核心過濾：info ∪ suggest ∪ historydb
+                    # 只要不在零股寶，且不在歷史發放紀錄中，才跳過不查
                     if sid not in sg_data and sid not in history_sids: 
                         continue
                     
-                    # 安全地取得零股寶資料 (如果只有歷史庫有，這裡會拿到預設的空字典)
+                    # 安全地取得零股寶資料 (若為歷史名單獨有，會拿到空字典)
                     sg_info = sg_data.get(sid, {}).get(m_type, {})
                     sg_item = sg_info.get('item', '無')
+                    # 若零股寶有物品且不為空/無，狀態設為發放，否則待公布
                     sg_status = "待公布" if sg_item in ["無", ""] or "尚未" in sg_item else "發放"
                     
                     state_key = f"{sid}_{m_type}"
@@ -244,18 +263,35 @@ async def check_mops_summary_async(session, conn, sg_data, history_sids, twse_pr
                     cursor.execute("SELECT time, pending FROM mops_states WHERE state_key = ?", (state_key,))
                     row = cursor.fetchone()
                     
+                    # 判定是否為新公告或處於 Pending 狀態
                     if full_time != (row[0] if row else "") or (row[1] if row else 0) == 1:
+                        # 寫入異動狀態
                         cursor.execute("INSERT OR REPLACE INTO mops_states (state_key, time, pending) VALUES (?, ?, 1)", (state_key, full_time))
-                        needs.append((sid, m_type, state_key, name, m_date, sg_status, sg_item, sg_info.get('condition', ''), price, last_buy, mk))
+                        
+                        # 🌟 寫入字典進行任務去重。若出現多次更正公告，後面的會覆蓋前面的
+                        needs_dict[state_key] = (sid, m_type, state_key, name, m_date, sg_status, sg_item, sg_info.get('condition', ''), price, last_buy, mk)
                     else:
-                        cursor.execute("INSERT OR IGNORE INTO page1_data (stock_id, meeting_type, stock_name, meeting_date, sg_status, sg_item, condition, price, last_buy, needs_debug) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 0)", (sid, m_type, name, m_date, sg_status, sg_item, sg_info.get('condition', ''), price, last_buy))
-                        cursor.execute("UPDATE page1_data SET price=?, last_buy=? WHERE stock_id=? AND meeting_type=?", (price, last_buy, sid, m_type))
+                        # 無異動，僅確保 page1 基礎資訊 (股價、買進日) 保持最新
+                        cursor.execute('''
+                            INSERT OR IGNORE INTO page1_data 
+                            (stock_id, meeting_type, stock_name, meeting_date, sg_status, sg_item, condition, price, last_buy, needs_debug) 
+                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 0)
+                        ''', (sid, m_type, name, m_date, sg_status, sg_item, sg_info.get('condition', ''), price, last_buy))
+                        
+                        cursor.execute('''
+                            UPDATE page1_data SET price=?, last_buy=? 
+                            WHERE stock_id=? AND meeting_type=?
+                        ''', (price, last_buy, sid, m_type))
+                        
                 conn.commit()
             except Exception as e: 
+                print(f"      ❌ [{mk}] 解析總表時發生錯誤: {e}")
                 pass
             
-    print(f"   ✅ 過濾完成，共有 {len(needs)} 檔異動需進入詳細比對。")
-    return needs
+    # 🌟 將去重後的字典轉回 List 回傳給 Step 3 處理
+    final_needs = list(needs_dict.values())
+    print(f"   ✅ 過濾完成，共有 {len(final_needs)} 檔異動需進入詳細比對 (已去重)。")
+    return final_needs
 
 # =========================================================
 # Step 3：終極完美修復版 (雙元年兼容 + 精準參數提取 + mk 解構)
@@ -477,10 +513,6 @@ async def main():
     await session.close()
     conn.close()
     print("✨ 所有任務完成，資料庫已安全斷線！")
-
-if __name__ == "__main__":
-    try: asyncio.run(main())
-    except KeyboardInterrupt: print("\n⚠️ 程式已被手動中斷。")
 
 if __name__ == "__main__":
     try: asyncio.run(main())

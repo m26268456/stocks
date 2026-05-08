@@ -12,7 +12,7 @@
             border-radius: 8px; padding: 12px 16px; z-index: 9999;
             pointer-events: none; transition: opacity 0.15s;
             box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5); border: 1px solid #334155;
-            font-size: 13px; line-height: 1.6; max-width: 280px;
+            font-size: 13px; line-height: 1.6; max-width: 260px;
         }
         .bg-strict { background-color: #fca5a5 !important; }
         .bg-gift { background-color: #bbf7d0 !important; }
@@ -40,8 +40,9 @@
             border-left: 4px solid transparent; border-right: 4px solid transparent;
             border-top: 5px solid #cbd5e1;
         }
-        .active-sort .tri-up { border-bottom-color: #3b82f6; }
-        .active-sort .tri-down { border-top-color: #3b82f6; }
+        /* 🌟 修正：只有在特定排序方向時才顯示藍色 */
+        .active-sort.sort-asc .tri-up { border-bottom-color: #3b82f6; }
+        .active-sort.sort-desc .tri-down { border-top-color: #3b82f6; }
     </style>
 </head>
 <body class="bg-slate-50 min-h-screen text-slate-800">
@@ -69,7 +70,7 @@
             <table class="min-w-full divide-y divide-slate-200 text-sm">
                 <thead class="bg-slate-100 text-slate-700 font-bold">
                     <tr>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>標籤說明</b><br><span class='text-green-600'>零</span>：僅零股寶有此資料<br><span class='text-red-600'>公</span>：僅MOPS有正式公告">
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('stock_id')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>標籤說明</b><br><span class='text-green-600'>零</span>：僅零股寶有資料<br><span class='text-red-600'>公</span>：僅MOPS有正式公告">
                             代號 <div class="sort-container" id="icon-stock_id"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap">名稱</th>
@@ -86,7 +87,7 @@
                         <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('hr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年蓋牌率</b><br><span class='bg-red-100 text-red-700 px-1 font-bold'>淺紅底</span>：= 100%<br><span class='text-red-700 font-bold'>深紅字</span>：≥ 60%">
                             蓋牌率 <div class="sort-container" id="icon-hr"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
-                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年翻盤率</b><br><span class='text-green-600 font-bold'>綠字粗體</span>：曾有不發放轉發放紀錄">
+                        <th class="sticky-header px-3 py-3 text-left sortable" onclick="setSort('fr')" onmouseenter="showTip(event, this)" onmousemove="moveTip(event)" onmouseleave="hideTip()" data-tip="<b>近5年翻盤率</b><br><span class='text-green-600 font-bold'>綠字粗體</span>：曾有翻盤紀錄">
                             翻盤率 <div class="sort-container" id="icon-fr"><div class="tri-up"></div><div class="tri-down"></div></div>
                         </th>
                         <th class="sticky-header px-3 py-3 text-left whitespace-nowrap sortable" onclick="setSort('update_date')">
@@ -144,7 +145,6 @@
         history: { key: 'stock_id', asc: true }
     };
 
-    // 🌟 資料載入與群組化邏輯
     async function loadData() {
         try {
             const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
@@ -153,19 +153,16 @@
                 fetch(`${basePath}/data/page1_data.json`).then(r => r.json())
             ]);
 
-            // 將扁平的歷史資料轉換為 Map 結構，方便快速查詢
             rawHistory.forEach(row => {
                 if (!dbHistoryMap[row.stock_id]) dbHistoryMap[row.stock_id] = {};
                 dbHistoryMap[row.stock_id][row.year] = row;
             });
 
-            // 處理當下會議資料
             dbPage1 = rawPage1.map(item => ({
                 ...item,
                 stats: calculateStats(dbHistoryMap[item.stock_id] || {})
             }));
 
-            // 處理歷史分頁資料
             dbHistoryList = Object.keys(dbHistoryMap).map(sid => {
                 const p1Match = rawPage1.find(p => p.stock_id === sid) || {};
                 return {
@@ -178,23 +175,17 @@
             });
 
             renderData();
-        } catch (e) { 
-            console.error("資料載入失敗，請檢查 /data 檔案路徑:", e); 
-        }
+        } catch (e) { console.error("資料載入失敗:", e); }
     }
 
-    // 🌟 統計計算邏輯
     function calculateStats(histDict) {
         let logs = [];
         let issues = 0, hides = 0, flips = 0;
-        
         for (let i = 1; i <= 5; i++) {
             const y = thisYear - i;
             const rec = histDict[y.toString()];
             const s = rec?.status || "";
-            const itemName = rec?.item || "未公告";
-            logs.push(`(${y}) ${itemName}`);
-            
+            logs.push(`(${y}) ${rec?.item || "未公告"}`);
             if (rec) {
                 if (s.includes("發放")) issues++;
                 if (s.includes("待公布 -> 發放") || s.includes("待公布->發放")) hides++;
@@ -236,7 +227,11 @@
             let valA, valB;
             switch(s.key) {
                 case 'stock_id': valA = a.stock_id; valB = b.stock_id; break;
-                case 'price': valA = parseFloat(a.price) || 0; valB = parseFloat(b.price) || 0; break;
+                case 'price': 
+                    // 🌟 修復：確保價格字串轉數字時過濾掉可能存在的逗號
+                    valA = parseFloat(String(a.price || '0').replace(/,/g, '')) || 0;
+                    valB = parseFloat(String(b.price || '0').replace(/,/g, '')) || 0;
+                    break;
                 case 'last_buy': valA = (a.last_buy || '').split(' ')[0]; valB = (b.last_buy || '').split(' ')[0]; break;
                 case 'update_date': valA = a.update_date || '1970/01/01'; valB = b.update_date || '1970/01/01'; break;
                 case 'ir': valA = a.stats.irRaw; valB = b.stats.irRaw; break;
@@ -252,30 +247,34 @@
 
     function renderData() {
         const q = document.getElementById('searchInput').value.toLowerCase();
-        document.querySelectorAll('.sort-container').forEach(el => el.parentElement.classList.remove('active-sort'));
+        
+        // 🌟 修正：重置所有排序標頭的樣式
+        document.querySelectorAll('.sortable').forEach(el => {
+            el.classList.remove('active-sort', 'sort-asc', 'sort-desc');
+        });
+
         let s = sortState[currentTab];
         let suffix = currentTab === 'history' ? '-hist' : '';
         let iconEl = document.getElementById(`icon-${s.key}${suffix}`);
-        if(iconEl) iconEl.parentElement.classList.add('active-sort');
+        
+        // 🌟 修正：根據目前排序狀態加入對應的 class
+        if (iconEl) {
+            let th = iconEl.parentElement;
+            th.classList.add('active-sort');
+            th.classList.add(s.asc ? 'sort-asc' : 'sort-desc');
+        }
 
         if (currentTab === 'current') {
             let data = dbPage1.filter(i => i.stock_id.includes(q) || i.stock_name.includes(q));
             data = sortData(data);
             document.getElementById('body-current').innerHTML = data.map(item => {
                 const condText = item.condition || '';
-                
-                // 🌟 「零」與「公」標籤判斷
                 let tag = "";
                 const hasSg = item.sg_item && item.sg_item !== "無" && item.sg_item !== "";
                 const hasMops = item.mops_status === "發放" || item.mops_status === "不發放";
-                
-                if (hasSg && !hasMops) {
-                    tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5" title="僅零股寶有資料">零</span>`;
-                } else if (!hasSg && hasMops) {
-                    tag = `<span class="text-red-600 font-bold text-[10px] align-top ml-0.5" title="僅MOPS有公告">公</span>`;
-                }
+                if (hasSg && !hasMops) tag = `<span class="text-green-600 font-bold text-[10px] align-top ml-0.5">零</span>`;
+                else if (!hasSg && hasMops) tag = `<span class="text-red-600 font-bold text-[10px] align-top ml-0.5">公</span>`;
 
-                // 最後買進日顏色邏輯
                 let buyClass = "";
                 if (!item.last_buy) buyClass = "bg-danger";
                 else {
@@ -283,11 +282,9 @@
                     if (cleanDate < todayStr) buyClass = "text-expired";
                 }
 
-                // 紀念品顯示優先序：MOPS 優先 -> 零股寶 -> 待公布
                 let displayItem = "待公布";
                 if (hasMops) displayItem = item.mops_item;
                 else if (hasSg) displayItem = item.sg_item;
-
                 if (item.needs_debug === 1) displayItem = `<span class="text-red-600 font-bold underline">查無詳細按鈕</span>`;
 
                 const isStrict = /身分|身份|證件|正本|不開放|委託/.test(condText);
@@ -339,16 +336,13 @@
         currentTab = tab;
         const actBtn = tab === 'current' ? 'tab-current' : 'tab-history';
         const inactBtn = tab === 'current' ? 'tab-history' : 'tab-current';
-        
         document.getElementById(actBtn).className = "px-4 py-1.5 rounded-md text-sm font-bold bg-indigo-900 shadow-inner ring-1 ring-indigo-400";
         document.getElementById(inactBtn).className = "px-4 py-1.5 rounded-md text-sm font-medium hover:bg-indigo-600 transition";
-        
         document.getElementById('page-current').className = tab === 'current' ? 'block' : 'hidden';
         document.getElementById('page-history').className = tab === 'history' ? 'block' : 'hidden';
         renderData();
     }
 
-    // Tooltip 控制器
     const tooltip = document.getElementById('global-tooltip');
     function showTip(e, el) { tooltip.innerHTML = el.getAttribute('data-tip'); tooltip.style.visibility = 'visible'; tooltip.style.opacity = '1'; moveTip(e); }
     function moveTip(e) {
