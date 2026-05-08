@@ -69368,14 +69368,6 @@
     "item": "7-11商品卡 35元"
   },
   {
-    "stock_id": "2498",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "HTC三角肩背包乙個"
-  },
-  {
     "stock_id": "2504",
     "year": "2026",
     "status": "發放",
@@ -75286,5 +75278,13 @@
     "first_status": "不發放",
     "latest_status": "不發放",
     "item": "不發放"
+  },
+  {
+    "stock_id": "2498",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "HTC三角肩背包乙個"
   }
 ]
