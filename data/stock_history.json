@@ -68848,14 +68848,6 @@
     "item": "Mini不銹鋼真空保溫杯"
   },
   {
-    "stock_id": "2340",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "50元超商商品卡"
-  },
-  {
     "stock_id": "2342",
     "year": "2026",
     "status": "發放",
@@ -70406,14 +70398,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "櫻花碗二入"
-  },
-  {
-    "stock_id": "4104",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "面膜"
   },
   {
     "stock_id": "4108",
@@ -75286,5 +75270,21 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "HTC三角肩背包乙個"
+  },
+  {
+    "stock_id": "2340",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "50元超商商品卡"
+  },
+  {
+    "stock_id": "4104",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "面膜"
   }
 ]
