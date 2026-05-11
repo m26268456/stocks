@@ -68968,14 +68968,6 @@
     "item": "Luminarc純白強化餐具2件套"
   },
   {
-    "stock_id": "2374",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "稻循皂"
-  },
-  {
     "stock_id": "2375",
     "year": "2026",
     "status": "發放",
@@ -70096,14 +70088,6 @@
     "item": "全家便利商店禮物卡新台幣伍拾元整"
   },
   {
-    "stock_id": "3346",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "MEDIMIX綠寶石皇室藥草浴美肌皂"
-  },
-  {
     "stock_id": "3356",
     "year": "2026",
     "status": "發放",
@@ -70294,14 +70278,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "超商咖啡提領卡"
-  },
-  {
-    "stock_id": "3645",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "全家便利商店伍拾元禮物卡"
   },
   {
     "stock_id": "3669",
@@ -71856,14 +71832,6 @@
     "item": "錦明股東專屬會員卡"
   },
   {
-    "stock_id": "3232",
-    "year": "2026",
-    "status": "待公布",
-    "first_status": "待公布",
-    "latest_status": "待公布",
-    "item": "開會前另行公告"
-  },
-  {
     "stock_id": "3234",
     "year": "2026",
     "status": "發放",
@@ -71982,14 +71950,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "全家禮物卡"
-  },
-  {
-    "stock_id": "3325",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商50元商品卡一張"
   },
   {
     "stock_id": "3339",
@@ -72272,14 +72232,6 @@
     "item": "統一超商商品卡50元"
   },
   {
-    "stock_id": "3587",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "超商35元商品卡"
-  },
-  {
     "stock_id": "3594",
     "year": "2026",
     "status": "不發放",
@@ -72502,14 +72454,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "大容量便攜式防潮密封分裝藥盒"
-  },
-  {
-    "stock_id": "4138",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "面膜"
   },
   {
     "stock_id": "4147",
@@ -72896,14 +72840,6 @@
     "item": "神守精華膠囊一盒"
   },
   {
-    "stock_id": "5014",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "全家中杯經典美式咖啡券乙張"
-  },
-  {
     "stock_id": "5015",
     "year": "2026",
     "status": "不發放",
@@ -73096,14 +73032,6 @@
     "item": "全家禮物卡50元"
   },
   {
-    "stock_id": "5426",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
     "stock_id": "5438",
     "year": "2026",
     "status": "發放",
@@ -73238,14 +73166,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "鑰匙圈"
-  },
-  {
-    "stock_id": "5701",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "萌髮洗髮精系列產品"
   },
   {
     "stock_id": "5905",
@@ -73454,14 +73374,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "環保肥皂（或歷年股東會紀念品或等值商品）"
-  },
-  {
-    "stock_id": "6169",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "清新植感草本皂"
   },
   {
     "stock_id": "6170",
@@ -74664,14 +74576,6 @@
     "item": "不發放"
   },
   {
-    "stock_id": "6696",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "Tommy Gummy - 葉黃素+枸杞軟糖"
-  },
-  {
     "stock_id": "6786",
     "year": "2026",
     "status": "發放",
@@ -75120,14 +75024,6 @@
     "item": "不發放"
   },
   {
-    "stock_id": "3362",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
     "stock_id": "3491",
     "year": "2026",
     "status": "不發放",
@@ -75286,5 +75182,109 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "面膜"
+  },
+  {
+    "stock_id": "2374",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "稻循皂"
+  },
+  {
+    "stock_id": "3346",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "MEDIMIX綠寶石皇室藥草浴美肌皂"
+  },
+  {
+    "stock_id": "3645",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "全家便利商店伍拾元禮物卡"
+  },
+  {
+    "stock_id": "3232",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "3325",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商50元商品卡一張"
+  },
+  {
+    "stock_id": "3362",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "3587",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "超商35元商品卡"
+  },
+  {
+    "stock_id": "4138",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "面膜"
+  },
+  {
+    "stock_id": "5014",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "全家中杯經典美式咖啡券乙張"
+  },
+  {
+    "stock_id": "5426",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "5701",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "萌髮洗髮精系列產品"
+  },
+  {
+    "stock_id": "6169",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "清新植感草本皂"
+  },
+  {
+    "stock_id": "6696",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "Tommy Gummy - 葉黃素+枸杞軟糖"
   }
 ]
