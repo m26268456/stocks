@@ -68104,14 +68104,6 @@
     "item": "不發放"
   },
   {
-    "stock_id": "1449",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "佳和醫用口罩"
-  },
-  {
     "stock_id": "1452",
     "year": "2026",
     "status": "發放",
@@ -69256,14 +69248,6 @@
     "item": "磁吸可掛式開瓶器露營燈"
   },
   {
-    "stock_id": "2471",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "毛寶洗碗精"
-  },
-  {
     "stock_id": "2478",
     "year": "2026",
     "status": "發放",
@@ -69952,22 +69936,6 @@
     "item": "五合一工具組"
   },
   {
-    "stock_id": "3056",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商50元商品卡"
-  },
-  {
-    "stock_id": "3057",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "摺疊餐具組"
-  },
-  {
     "stock_id": "3058",
     "year": "2026",
     "status": "發放",
@@ -70632,14 +70600,6 @@
     "item": "全家35元禮物卡"
   },
   {
-    "stock_id": "4989",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商商品卡50元"
-  },
-  {
     "stock_id": "4999",
     "year": "2026",
     "status": "發放",
@@ -70774,14 +70734,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "手工香皂"
-  },
-  {
-    "stock_id": "6141",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商35元商品卡"
   },
   {
     "stock_id": "6142",
@@ -71286,14 +71238,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "洗衣機槽清洗錠"
-  },
-  {
-    "stock_id": "8105",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商50元商品卡"
   },
   {
     "stock_id": "8110",
@@ -71862,14 +71806,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "雙層環保提袋"
-  },
-  {
-    "stock_id": "3268",
-    "year": "2026",
-    "status": "待公布",
-    "first_status": "待公布",
-    "latest_status": "待公布",
-    "item": "開會前另行公告"
   },
   {
     "stock_id": "3276",
@@ -72558,14 +72494,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "超商50元商品卡"
-  },
-  {
-    "stock_id": "4513",
-    "year": "2026",
-    "status": "待公布",
-    "first_status": "待公布",
-    "latest_status": "待公布",
-    "item": "開會前另行公告"
   },
   {
     "stock_id": "4523",
@@ -74032,14 +73960,6 @@
     "item": "康寧耐熱玻璃烤盤7吋"
   },
   {
-    "stock_id": "8054",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商45元咖啡提貨卡"
-  },
-  {
     "stock_id": "8064",
     "year": "2026",
     "status": "發放",
@@ -74094,14 +74014,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "統一商品卡100元"
-  },
-  {
-    "stock_id": "8085",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "植舒香皂組"
   },
   {
     "stock_id": "8086",
@@ -74326,14 +74238,6 @@
     "first_status": "不發放",
     "latest_status": "不發放",
     "item": "不發放"
-  },
-  {
-    "stock_id": "8436",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "大江精選福袋"
   },
   {
     "stock_id": "8437",
@@ -74633,14 +74537,6 @@
   },
   {
     "stock_id": "6815",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
-    "stock_id": "6876",
     "year": "2026",
     "status": "不發放",
     "first_status": "不發放",
@@ -75286,5 +75182,109 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "Tommy Gummy - 葉黃素+枸杞軟糖"
+  },
+  {
+    "stock_id": "1449",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "佳和醫用口罩"
+  },
+  {
+    "stock_id": "2471",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "毛寶洗碗精"
+  },
+  {
+    "stock_id": "3056",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商50元商品卡"
+  },
+  {
+    "stock_id": "3057",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "摺疊餐具組"
+  },
+  {
+    "stock_id": "4989",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商商品卡50元"
+  },
+  {
+    "stock_id": "6141",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商35元商品卡"
+  },
+  {
+    "stock_id": "8105",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商50元商品卡"
+  },
+  {
+    "stock_id": "3268",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "7-11商品卡35元"
+  },
+  {
+    "stock_id": "4513",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "8054",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商45元咖啡提貨卡"
+  },
+  {
+    "stock_id": "8085",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "植舒香皂組"
+  },
+  {
+    "stock_id": "8436",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "大江精選福袋"
+  },
+  {
+    "stock_id": "6876",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
   }
 ]
