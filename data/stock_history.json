@@ -68696,14 +68696,6 @@
     "item": "三角斜背保溫保冷袋"
   },
   {
-    "stock_id": "2208",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商45元咖啡卡"
-  },
-  {
     "stock_id": "2211",
     "year": "2026",
     "status": "不發放",
@@ -71480,14 +71472,6 @@
     "item": "順暢益生菌"
   },
   {
-    "stock_id": "1591",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "全家便利商店禮物卡50元"
-  },
-  {
     "stock_id": "1781",
     "year": "2026",
     "status": "發放",
@@ -71550,14 +71534,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "7-11 35元商品卡"
-  },
-  {
-    "stock_id": "2734",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "ESG永續公益刨刀"
   },
   {
     "stock_id": "2740",
@@ -72328,14 +72304,6 @@
     "item": "靚亮膠原蛋白"
   },
   {
-    "stock_id": "4113",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
     "stock_id": "4114",
     "year": "2026",
     "status": "發放",
@@ -72454,14 +72422,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "面膜"
-  },
-  {
-    "stock_id": "4174",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "超商35元禮物卡"
   },
   {
     "stock_id": "4303",
@@ -72630,14 +72590,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "酒精噴霧筆"
-  },
-  {
-    "stock_id": "4804",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "超商商品卡50元"
   },
   {
     "stock_id": "4806",
@@ -73400,14 +73352,6 @@
     "item": "牛樟芝菌絲體膠囊10粒入/盒"
   },
   {
-    "stock_id": "6217",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商商品卡50元"
-  },
-  {
     "stock_id": "6218",
     "year": "2026",
     "status": "發放",
@@ -73510,14 +73454,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "7-11商品券35元"
-  },
-  {
-    "stock_id": "6265",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "股東專屬-仙桃牌購物金$250元"
   },
   {
     "stock_id": "6266",
@@ -75286,5 +75222,69 @@
     "first_status": "不發放",
     "latest_status": "不發放",
     "item": "不發放"
+  },
+  {
+    "stock_id": "2208",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商45元咖啡卡"
+  },
+  {
+    "stock_id": "1591",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "全家便利商店禮物卡50元"
+  },
+  {
+    "stock_id": "2734",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "ESG永續公益刨刀"
+  },
+  {
+    "stock_id": "4113",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "4174",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "超商35元禮物卡"
+  },
+  {
+    "stock_id": "4804",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "超商商品卡50元"
+  },
+  {
+    "stock_id": "6217",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商商品卡50元"
+  },
+  {
+    "stock_id": "6265",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "股東專屬-仙桃牌購物金$250元"
   }
 ]
