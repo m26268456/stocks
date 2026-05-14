@@ -68168,14 +68168,6 @@
     "item": "查無紀念品關鍵字"
   },
   {
-    "stock_id": "1512",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
     "stock_id": "1513",
     "year": "2026",
     "status": "發放",
@@ -69696,14 +69688,6 @@
     "item": "全家禮物卡50元"
   },
   {
-    "stock_id": "3011",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "超商35元商品卡"
-  },
-  {
     "stock_id": "3013",
     "year": "2026",
     "status": "發放",
@@ -70384,14 +70368,6 @@
     "item": "環保購物袋"
   },
   {
-    "stock_id": "4414",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
     "stock_id": "4526",
     "year": "2026",
     "status": "發放",
@@ -70534,14 +70510,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "超商商品卡新台幣35元"
-  },
-  {
-    "stock_id": "4943",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
   },
   {
     "stock_id": "4956",
@@ -71368,14 +71336,6 @@
     "item": "便利商店禮物卡35元"
   },
   {
-    "stock_id": "9914",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商商品卡"
-  },
-  {
     "stock_id": "9917",
     "year": "2026",
     "status": "發放",
@@ -71616,14 +71576,6 @@
     "item": "統一超商35元商品卡（或等值商品替代"
   },
   {
-    "stock_id": "3128",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "全家便利商店禮物卡35元"
-  },
-  {
     "stock_id": "3131",
     "year": "2026",
     "status": "發放",
@@ -71688,14 +71640,6 @@
     "item": "實用指甲剪組"
   },
   {
-    "stock_id": "3207",
-    "year": "2026",
-    "status": "無資料",
-    "first_status": "無資料",
-    "latest_status": "無資料",
-    "item": "查無紀念品關鍵字"
-  },
-  {
     "stock_id": "3211",
     "year": "2026",
     "status": "發放",
@@ -71718,14 +71662,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "指甲剪套裝折疊包"
-  },
-  {
-    "stock_id": "3224",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
   },
   {
     "stock_id": "3227",
@@ -71958,14 +71894,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "帆布零錢包"
-  },
-  {
-    "stock_id": "3455",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "7-11商品卡35元"
   },
   {
     "stock_id": "3466",
@@ -73128,28 +73056,12 @@
     "item": "超商禮物卡50元"
   },
   {
-    "stock_id": "6127",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "禮物卡35元"
-  },
-  {
     "stock_id": "6129",
     "year": "2026",
     "status": "發放",
     "first_status": "發放",
     "latest_status": "發放",
     "item": "全家50元禮券"
-  },
-  {
-    "stock_id": "6130",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "35元超商禮物卡"
   },
   {
     "stock_id": "6134",
@@ -73240,14 +73152,6 @@
     "item": "蜂王清新植感草本皂"
   },
   {
-    "stock_id": "6163",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "手機支架"
-  },
-  {
     "stock_id": "6167",
     "year": "2026",
     "status": "發放",
@@ -73302,14 +73206,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "好無比洗衣精"
-  },
-  {
-    "stock_id": "6186",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "7-11商品卡"
   },
   {
     "stock_id": "6187",
@@ -73382,14 +73278,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "統一超商商品卡50元"
-  },
-  {
-    "stock_id": "6229",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "捲尺"
   },
   {
     "stock_id": "6231",
@@ -73928,14 +73816,6 @@
     "item": "GREEN & SAFE 蔬果碗盤清潔液體皂"
   },
   {
-    "stock_id": "8071",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "稻循皂"
-  },
-  {
     "stock_id": "8074",
     "year": "2026",
     "status": "發放",
@@ -74142,14 +74022,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "香水洗衣精1罐"
-  },
-  {
-    "stock_id": "8403",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "智醫康寓住宿抵用券1,000元"
   },
   {
     "stock_id": "8409",
@@ -75286,5 +75158,133 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "股東專屬-仙桃牌購物金$250元"
+  },
+  {
+    "stock_id": "1512",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "3011",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "超商35元商品卡"
+  },
+  {
+    "stock_id": "4414",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "4943",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "9914",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商商品卡"
+  },
+  {
+    "stock_id": "3128",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "全家便利商店禮物卡35元"
+  },
+  {
+    "stock_id": "3207",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "全家便利商店50元禮物卡"
+  },
+  {
+    "stock_id": "3224",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "3455",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "7-11商品卡35元"
+  },
+  {
+    "stock_id": "6127",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "禮物卡35元"
+  },
+  {
+    "stock_id": "6130",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "35元超商禮物卡"
+  },
+  {
+    "stock_id": "6163",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "手機支架"
+  },
+  {
+    "stock_id": "6186",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "7-11商品卡"
+  },
+  {
+    "stock_id": "6229",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "捲尺"
+  },
+  {
+    "stock_id": "8071",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "稻循皂"
+  },
+  {
+    "stock_id": "8403",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "智醫康寓住宿抵用券1,000元"
   }
 ]
