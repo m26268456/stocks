@@ -68256,14 +68256,6 @@
     "item": "超商50元商品卡"
   },
   {
-    "stock_id": "1538",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
     "stock_id": "1540",
     "year": "2026",
     "status": "發放",
@@ -69656,14 +69648,6 @@
     "item": "日月紅茶2.4公克*20入茶包"
   },
   {
-    "stock_id": "2929",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "馬卡龍迷你捲尺"
-  },
-  {
     "stock_id": "3004",
     "year": "2026",
     "status": "不發放",
@@ -69838,14 +69822,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "證件包"
-  },
-  {
-    "stock_id": "3041",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商50元商品卡"
   },
   {
     "stock_id": "3042",
@@ -70094,14 +70070,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "時尚輕巧隨手杯"
-  },
-  {
-    "stock_id": "3494",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
   },
   {
     "stock_id": "3518",
@@ -72736,14 +72704,6 @@
     "item": "不鏽鋼玻璃調料罐"
   },
   {
-    "stock_id": "5314",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "【朝和生醫】保健食品乙包"
-  },
-  {
     "stock_id": "5315",
     "year": "2026",
     "status": "發放",
@@ -72792,28 +72752,12 @@
     "item": "真空包裝米"
   },
   {
-    "stock_id": "5381",
-    "year": "2026",
-    "status": "無資料",
-    "first_status": "無資料",
-    "latest_status": "無資料",
-    "item": "查無紀念品關鍵字"
-  },
-  {
     "stock_id": "5386",
     "year": "2026",
     "status": "發放",
     "first_status": "發放",
     "latest_status": "發放",
     "item": "肥皂組"
-  },
-  {
-    "stock_id": "5392",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "稻循皂"
   },
   {
     "stock_id": "5398",
@@ -73414,14 +73358,6 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "7-11 商品卡50元"
-  },
-  {
-    "stock_id": "6419",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "小羊苗x蜂王 暖心植樸舒活皂"
   },
   {
     "stock_id": "6432",
@@ -75136,14 +75072,6 @@
     "item": "超商35元禮物卡"
   },
   {
-    "stock_id": "4804",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "超商商品卡50元"
-  },
-  {
     "stock_id": "6217",
     "year": "2026",
     "status": "發放",
@@ -75232,14 +75160,6 @@
     "item": "7-11商品卡35元"
   },
   {
-    "stock_id": "6127",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "禮物卡35元"
-  },
-  {
     "stock_id": "6130",
     "year": "2026",
     "status": "發放",
@@ -75286,5 +75206,85 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "智醫康寓住宿抵用券1,000元"
+  },
+  {
+    "stock_id": "1538",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "2929",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "馬卡龍迷你捲尺"
+  },
+  {
+    "stock_id": "3041",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商50元商品卡"
+  },
+  {
+    "stock_id": "3494",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "4804",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "5314",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "【朝和生醫】保健食品乙包"
+  },
+  {
+    "stock_id": "5381",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商50元商品卡"
+  },
+  {
+    "stock_id": "5392",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "稻循皂"
+  },
+  {
+    "stock_id": "6127",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "禮物卡35元"
+  },
+  {
+    "stock_id": "6419",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "小羊苗x蜂王 暖心植樸舒活皂"
   }
 ]
