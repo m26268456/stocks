@@ -73592,14 +73592,6 @@
     "item": "統一超商50元商品卡"
   },
   {
-    "stock_id": "6727",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商商品卡"
-  },
-  {
     "stock_id": "6761",
     "year": "2026",
     "status": "發放",
@@ -75286,5 +75278,13 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "小羊苗x蜂王 暖心植樸舒活皂"
+  },
+  {
+    "stock_id": "6727",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商商品卡"
   }
 ]
