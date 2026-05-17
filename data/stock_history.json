@@ -75286,5 +75286,13 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "統一超商商品卡"
+  },
+  {
+    "stock_id": "1336",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "面額新台幣35元7-ELEVEN商品卡"
   }
 ]
