@@ -72640,14 +72640,6 @@
     "item": "統一超商35元商品卡"
   },
   {
-    "stock_id": "5227",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "超商商品卡50元"
-  },
-  {
     "stock_id": "5230",
     "year": "2026",
     "status": "發放",
@@ -73920,14 +73912,6 @@
     "item": "全家禮物卡100元"
   },
   {
-    "stock_id": "8354",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "200元超商商品卡"
-  },
-  {
     "stock_id": "8358",
     "year": "2026",
     "status": "發放",
@@ -74273,14 +74257,6 @@
   },
   {
     "stock_id": "6815",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
-    "stock_id": "6886",
     "year": "2026",
     "status": "不發放",
     "first_status": "不發放",
@@ -75294,5 +75270,29 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "面額新台幣35元7-ELEVEN商品卡"
+  },
+  {
+    "stock_id": "5227",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "超商商品卡50元"
+  },
+  {
+    "stock_id": "8354",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "200元超商商品卡"
+  },
+  {
+    "stock_id": "6886",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
   }
 ]
