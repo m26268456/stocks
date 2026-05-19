@@ -68480,14 +68480,6 @@
     "item": "不發放"
   },
   {
-    "stock_id": "1786",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商35元商品卡"
-  },
-  {
     "stock_id": "1809",
     "year": "2026",
     "status": "發放",
@@ -75294,5 +75286,13 @@
     "first_status": "不發放",
     "latest_status": "不發放",
     "item": "不發放"
+  },
+  {
+    "stock_id": "1786",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商35元商品卡"
   }
 ]
