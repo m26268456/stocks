@@ -68288,14 +68288,6 @@
     "item": "7-ELEVEN商品卡100元"
   },
   {
-    "stock_id": "1589",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
-  },
-  {
     "stock_id": "1604",
     "year": "2026",
     "status": "發放",
@@ -74288,14 +74280,6 @@
     "item": "統一超商商品卡50元"
   },
   {
-    "stock_id": "7729",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商50元商品卡"
-  },
-  {
     "stock_id": "7895",
     "year": "2026",
     "status": "發放",
@@ -75294,5 +75278,21 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "統一超商35元商品卡"
+  },
+  {
+    "stock_id": "1589",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "7729",
+    "year": "2026",
+    "status": "發放",
+    "first_status": "發放",
+    "latest_status": "發放",
+    "item": "統一超商50元商品卡"
   }
 ]
