@@ -72616,14 +72616,6 @@
     "item": "常健順暢益生菌"
   },
   {
-    "stock_id": "5210",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "統一超商35元商品卡"
-  },
-  {
     "stock_id": "5230",
     "year": "2026",
     "status": "發放",
@@ -75286,6 +75278,14 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "統一超商50元商品卡"
+  },
+  {
+    "stock_id": "5210",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
   },
   {
     "stock_id": "6204",
