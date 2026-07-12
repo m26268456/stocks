@@ -14364,7 +14364,7 @@
     "condition": "電子投票截圖和身分證件正本 身分證、健保卡或駕照正本",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/07/11",
+    "update_date": "2026/07/12",
     "price": "12.05",
     "last_buy": "2026/04/22 (三)",
     "needs_debug": 0
@@ -14379,7 +14379,7 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/07/11",
+    "update_date": "2026/07/12",
     "price": "30.55",
     "last_buy": "2026/03/31 (二)",
     "needs_debug": 0
@@ -14394,7 +14394,7 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "全家便利商店禮物卡50元",
-    "update_date": "2026/07/11",
+    "update_date": "2026/07/12",
     "price": "98.50",
     "last_buy": "2026/03/18 (三)",
     "needs_debug": 0
