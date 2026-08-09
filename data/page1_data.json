@@ -14364,7 +14364,7 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/08/08",
+    "update_date": "2026/08/09",
     "price": "24.20",
     "last_buy": "2026/03/12 (四)",
     "needs_debug": 0
@@ -14379,7 +14379,7 @@
     "condition": "電子投票截圖和身分證件正本 身分證、健保卡或駕照正本",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/08/08",
+    "update_date": "2026/08/09",
     "price": "14.25",
     "last_buy": "2026/04/22 (三)",
     "needs_debug": 0
@@ -14394,7 +14394,7 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家50元禮物卡",
-    "update_date": "2026/08/08",
+    "update_date": "2026/08/09",
     "price": "114.50",
     "last_buy": "2026/02/04 (三)",
     "needs_debug": 0
@@ -14409,7 +14409,7 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/08/08",
+    "update_date": "2026/08/09",
     "price": "25.10",
     "last_buy": "2026/01/07 (三)",
     "needs_debug": 0
@@ -14424,7 +14424,7 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/08/08",
+    "update_date": "2026/08/09",
     "price": "89.30",
     "last_buy": "2026/04/22 (三)",
     "needs_debug": 0
@@ -14439,7 +14439,7 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/08/08",
+    "update_date": "2026/08/09",
     "price": "28.25",
     "last_buy": "2026/03/31 (二)",
     "needs_debug": 0
@@ -14454,9 +14454,39 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "全家便利商店禮物卡50元",
-    "update_date": "2026/08/08",
+    "update_date": "2026/08/09",
     "price": "78.90",
     "last_buy": "2026/03/18 (三)",
+    "needs_debug": 0
+  },
+  {
+    "stock_id": "4546",
+    "meeting_type": "臨時會",
+    "stock_name": "長亨",
+    "meeting_date": "115/08/31",
+    "sg_status": "發放",
+    "sg_item": "超商商品卡300元",
+    "condition": "",
+    "mops_status": "發放",
+    "mops_item": "超商商品卡300元",
+    "update_date": "2026/08/09",
+    "price": "",
+    "last_buy": "2026/07/29 (三)",
+    "needs_debug": 0
+  },
+  {
+    "stock_id": "4546",
+    "meeting_type": "常會",
+    "stock_name": "長亨",
+    "meeting_date": "115/06/29",
+    "sg_status": "待公布",
+    "sg_item": "無",
+    "condition": "",
+    "mops_status": "不發放",
+    "mops_item": "不發放",
+    "update_date": "2026/08/09",
+    "price": "",
+    "last_buy": "2026/04/27 (一)",
     "needs_debug": 0
   }
 ]
