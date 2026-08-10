@@ -75280,6 +75280,14 @@
     "item": "不發放"
   },
   {
+    "stock_id": "4546",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
     "stock_id": "4127",
     "year": "2026",
     "status": "不發放",
@@ -75302,13 +75310,5 @@
     "first_status": "發放",
     "latest_status": "發放",
     "item": "全家便利商店禮物卡50元"
-  },
-  {
-    "stock_id": "4546",
-    "year": "2026",
-    "status": "不發放",
-    "first_status": "不發放",
-    "latest_status": "不發放",
-    "item": "不發放"
   }
 ]
