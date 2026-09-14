@@ -67912,14 +67912,6 @@
     "item": "中性濃縮洗衣精"
   },
   {
-    "stock_id": "1225",
-    "year": "2026",
-    "status": "發放",
-    "first_status": "發放",
-    "latest_status": "發放",
-    "item": "全家超商禮物卡50元"
-  },
-  {
     "stock_id": "1305",
     "year": "2026",
     "status": "發放",
@@ -75297,6 +75289,14 @@
   },
   {
     "stock_id": "3712",
+    "year": "2026",
+    "status": "不發放",
+    "first_status": "不發放",
+    "latest_status": "不發放",
+    "item": "不發放"
+  },
+  {
+    "stock_id": "1225",
     "year": "2026",
     "status": "不發放",
     "first_status": "不發放",
