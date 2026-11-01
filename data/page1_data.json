@@ -14664,7 +14664,7 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "25.15",
     "last_buy": "2026/04/22 (三)",
     "needs_debug": 0
@@ -14679,7 +14679,7 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "25.15",
     "last_buy": "2026/03/12 (四)",
     "needs_debug": 0
@@ -14694,7 +14694,7 @@
     "condition": "電子投票截圖和身分證件正本 身分證、健保卡或駕照正本",
     "mops_status": "待公布",
     "mops_item": "開會前另行公告",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "9.96",
     "last_buy": "2026/04/22 (三)",
     "needs_debug": 0
@@ -14709,7 +14709,7 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "29.55",
     "last_buy": "2026/07/17 (五)",
     "needs_debug": 0
@@ -14724,7 +14724,7 @@
     "condition": "電子投票截圖",
     "mops_status": "發放",
     "mops_item": "全家50元禮物卡",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "120.00",
     "last_buy": "2026/02/04 (三)",
     "needs_debug": 0
@@ -14739,9 +14739,39 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "30.20",
     "last_buy": "2026/01/21 (三)",
+    "needs_debug": 0
+  },
+  {
+    "stock_id": "3349",
+    "meeting_type": "臨時會",
+    "stock_name": "寶德",
+    "meeting_date": "115/12/11",
+    "sg_status": "待公布",
+    "sg_item": "無",
+    "condition": "",
+    "mops_status": "待公布",
+    "mops_item": "開會前另行公告",
+    "update_date": "2026/11/01",
+    "price": "19.00",
+    "last_buy": "2026/11/06 (五)",
+    "needs_debug": 0
+  },
+  {
+    "stock_id": "3349",
+    "meeting_type": "常會",
+    "stock_name": "寶德",
+    "meeting_date": "115/06/01",
+    "sg_status": "發放",
+    "sg_item": "26/11/02",
+    "condition": "",
+    "mops_status": "不發放",
+    "mops_item": "不發放",
+    "update_date": "2026/11/01",
+    "price": "19.00",
+    "last_buy": "2026/03/30 (一)",
     "needs_debug": 0
   },
   {
@@ -14754,7 +14784,7 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "27.60",
     "last_buy": "2026/01/07 (三)",
     "needs_debug": 0
@@ -14769,7 +14799,7 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "34.85",
     "last_buy": "2026/04/22 (三)",
     "needs_debug": 0
@@ -14784,7 +14814,7 @@
     "condition": "電子投票截圖",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "30.00",
     "last_buy": "2026/03/31 (二)",
     "needs_debug": 0
@@ -14799,7 +14829,7 @@
     "condition": "電子投票截圖(egift實體有期限) egift實體有期限",
     "mops_status": "發放",
     "mops_item": "全家便利商店禮物卡50元",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "101.50",
     "last_buy": "2026/03/18 (三)",
     "needs_debug": 0
@@ -14814,9 +14844,24 @@
     "condition": "",
     "mops_status": "不發放",
     "mops_item": "不發放",
-    "update_date": "2026/10/31",
+    "update_date": "2026/11/01",
     "price": "",
     "last_buy": "2026/06/18 (四)",
+    "needs_debug": 0
+  },
+  {
+    "stock_id": "7955",
+    "meeting_type": "臨時會",
+    "stock_name": "車麗屋",
+    "meeting_date": "115/12/09",
+    "sg_status": "待公布",
+    "sg_item": "無",
+    "condition": "",
+    "mops_status": "待公布",
+    "mops_item": "開會前另行公告",
+    "update_date": "2026/11/01",
+    "price": "",
+    "last_buy": "2026/11/04 (三)",
     "needs_debug": 0
   }
 ]
